@@ -24,12 +24,14 @@ namespace ProjectArcadeGame
         public MainWindow()
         {
             InitializeComponent();
-            MainWindow mainWindow = new MainWindow();
 
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
+            StartWindow startWindow = new StartWindow();
+            startWindow.Visibility = Visibility.Visible;
+            MainWindow mainWindow = new MainWindow();
             mainWindow.Visibility = Visibility.Hidden;
         }
     }
