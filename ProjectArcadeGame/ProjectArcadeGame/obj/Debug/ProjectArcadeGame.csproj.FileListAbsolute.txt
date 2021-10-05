@@ -23,8 +23,6 @@ C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\Projec
 C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
 C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
 C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb
-<<<<<<< HEAD
-=======
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
@@ -50,4 +48,3 @@ C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcad
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb
->>>>>>> Marten
