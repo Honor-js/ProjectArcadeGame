@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\App.xaml
-51050685499
+6-215619882
 
-9154886580
+101240025427
 13-1505183044
-GameEndWindow.xaml;Highscores.xaml;HowToPlay.xaml;MainWindow.xaml;StartWindow.xaml;
+GameEndWindow.xaml;GameWindow.xaml;Highscores.xaml;HowToPlay.xaml;MainWindow.xaml;StartWindow.xaml;
 
-True
+False
 

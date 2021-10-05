@@ -1,0 +1,50 @@
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.AssemblyReference.cache
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\App.g.cs
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.cache
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.lref
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.baml
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.baml
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.baml
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.baml
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.baml
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.baml
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.g.resources
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.Properties.Resources.resources
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.GenerateResource.cache
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
+C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csprojAssemblyReference.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\App.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.lref
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.g.resources
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.Properties.Resources.resources
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.GenerateResource.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb

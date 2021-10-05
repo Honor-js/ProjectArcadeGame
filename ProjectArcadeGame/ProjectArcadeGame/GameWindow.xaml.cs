@@ -30,7 +30,7 @@ namespace ProjectArcadeGame
             GameTimer.Tick += GameEngine;
             GameTimer.Start();
 
-            PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://appication:,,,/mario.png"));
+            PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
             Player.Fill = PlayerSkin;
         }
 
@@ -40,6 +40,10 @@ namespace ProjectArcadeGame
                 Canvas.SetRight(Player, Canvas.GetRight(Player) + 10);
             if (MoveRight)
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) + 10);
+            if (MoveUp)
+                Canvas.SetBottom(Player, Canvas.GetBottom(Player) + 30);
+                Task.Delay(200);
+                Canvas.SetTop(Player, Canvas.GetTop(Player) + 30);
         }
 
         private void KeyPress(object sender, KeyEventArgs press)
@@ -48,6 +52,8 @@ namespace ProjectArcadeGame
                 MoveLeft = true;
             if (press.Key == Key.Right)
                 MoveRight = true;
+            if (press.Key == Key.Up)
+                MoveUp = true;
         }
 
         private void KeyRelease(object sender, KeyEventArgs press)
@@ -56,6 +62,8 @@ namespace ProjectArcadeGame
                 MoveLeft = false;
             if (press.Key == Key.Right)
                 MoveRight = false;
+            if (press.Key == Key.Up)
+                MoveUp = false;
         }
     }
 }

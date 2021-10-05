@@ -29,6 +29,8 @@ namespace ProjectArcadeGame
         {
             StartWindow startWindow = new StartWindow();
             startWindow.Visibility = Visibility.Hidden;
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Visibility = Visibility.Visible;
         }
     }
 }
