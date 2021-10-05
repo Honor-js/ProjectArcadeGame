@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\marte\Documents\NHL Stenden\Jaar 1 Mk. 2\Project Arcade Game\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\
 ProjectArcadeGame
 none
 false
 DEBUG;TRACE
-C:\Users\marte\Documents\NHL Stenden\Jaar 1 Mk. 2\Project Arcade Game\ProjectArcadeGame\ProjectArcadeGame\App.xaml
-11151548125
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\App.xaml
+51050685499
 
-61434861427
+10-687472787
 13-1505183044
-MainWindow.xaml;
+GameEndWindow.xaml;Highscores.xaml;HowToPlay.xaml;MainWindow.xaml;StartWindow.xaml;
 
 True
 
