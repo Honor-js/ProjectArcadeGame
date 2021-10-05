@@ -20,9 +20,17 @@ namespace ProjectArcadeGame
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            MainWindow mainWindow = new MainWindow();
+
+        }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.Visibility = Visibility.Hidden;
         }
     }
 }
