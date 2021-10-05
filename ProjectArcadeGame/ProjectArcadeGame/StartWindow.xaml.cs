@@ -22,6 +22,13 @@ namespace ProjectArcadeGame
         public StartWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            StartWindow startWindow = new StartWindow();
+            startWindow.Visibility = Visibility.Hidden;
         }
     }
 }

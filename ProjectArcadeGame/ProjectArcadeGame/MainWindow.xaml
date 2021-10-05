@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
         <Label Content="test"></Label>
         <Label Grid.Column="1" Content="Game Naam"/>
-        <Button Grid.Column="1" Grid.Row="1">Start</Button>
+        <Button Grid.Column="1" Grid.Row="1" Click="Start_Click">Start</Button>
         <Button Grid.Column="1" Grid.Row="2">How to play</Button>
         <Button Grid.Column="1" Grid.Row="3">Highscores</Button>
         <Button Grid.Column="1" Grid.Row="4">Exit</Button>
