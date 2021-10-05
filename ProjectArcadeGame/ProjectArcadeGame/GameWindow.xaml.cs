@@ -30,7 +30,7 @@ namespace ProjectArcadeGame
             GameTimer.Tick += GameEngine;
             GameTimer.Start();
 
-            PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://appication:,,,/mario.png"));
+            PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
             Player.Fill = PlayerSkin;
         }
 
