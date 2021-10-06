@@ -23,6 +23,9 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkin = new ImageBrush();
         private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false;
         private DispatcherTimer GameTimer = new DispatcherTimer();
+        int gravity = 20;
+        const int speed = 8;
+
 
         private void KeyPress(object sender, KeyEventArgs press)
         {
@@ -63,24 +66,34 @@ namespace ProjectArcadeGame
 
         private void GameEngine(object sender, EventArgs press)
         {
+            double TopPos = Canvas.GetTop(Player);
+            double LeftPos = Canvas.GetLeft(Player);
             //todo left en right images maken en testen
             if (MoveLeft)
             {
-                Canvas.SetLeft(Player, Canvas.GetLeft(Player) - 10);
+                Canvas.SetLeft(Player, Canvas.GetLeft(Player) - speed);
             }
                 
             if (MoveRight)
             {
-                Canvas.SetLeft(Player, Canvas.GetLeft(Player) + 10);
+                Canvas.SetLeft(Player, Canvas.GetLeft(Player) + speed);
             }
                 
-
             //todo jump fixen want werkt niet goed
-            if (MoveUp)
+            if (MoveUp &&  gravity > 0 && TopPos > 10)
             {
-                Canvas.SetBottom(Player, Canvas.GetBottom(Player) + 30);
-                Task.Delay(200);
-                Canvas.SetBottom(Player, Canvas.GetBottom(Player) - 30);
+                Canvas.SetTop(Player, Canvas.GetTop(Player) - 8);
+                gravity -= 1;
+            }
+            else
+            {
+                MoveUp = false;
+                gravity = 20;
+            }
+            
+            if (MoveUp == false && TopPos < 296)
+            {
+                Canvas.SetTop(Player, Canvas.GetTop(Player) + 8);
             }
                 
         }

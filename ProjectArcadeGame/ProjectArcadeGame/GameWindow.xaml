@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
-        Title="GameWindow" Height="450" Width="800">
+        Title="GameWindow" Height="450" Width="800" WindowState="Maximized">
     <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True">
         <Rectangle
             x:Name="Player"
@@ -13,6 +13,12 @@
             Height="75"
             Width="75"
             Canvas.Left="10"
-            Canvas.Top="50"/>
+            Canvas.Top="296"/>
+        <Rectangle
+            x:Name="ground"
+            Fill="Green"
+            Height="50"
+            Width="794"
+            Canvas.Top="371"/>
     </Canvas>
 </Window>
