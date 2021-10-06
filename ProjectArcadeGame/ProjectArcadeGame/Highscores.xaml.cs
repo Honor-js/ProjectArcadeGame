@@ -23,5 +23,12 @@ namespace ProjectArcadeGame
         {
             InitializeComponent();
         }
+
+        private void HighscoreBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Visibility = Visibility.Visible;
+            this.Close();
+        }
     }
 }

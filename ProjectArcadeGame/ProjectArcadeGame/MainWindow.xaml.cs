@@ -34,5 +34,24 @@ namespace ProjectArcadeGame
             startWindow.Visibility = Visibility.Visible;
             this.Close();
         }
+
+        private void How_Click(object sender, RoutedEventArgs e)
+        {
+            HowToPlay howToPlay = new HowToPlay();
+            howToPlay.Visibility = Visibility.Visible;
+            this.Close();
+        }
+
+        private void Highscore_Click(object sender, RoutedEventArgs e)
+        {
+            Highscores highscores = new Highscores();
+            highscores.Visibility = Visibility.Visible;
+            this.Close();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
