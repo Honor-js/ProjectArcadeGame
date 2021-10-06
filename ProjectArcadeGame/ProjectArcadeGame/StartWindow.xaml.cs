@@ -29,8 +29,13 @@ namespace ProjectArcadeGame
         {
             StartWindow startWindow = new StartWindow();
             startWindow.Visibility = Visibility.Hidden;
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Visibility = Visibility.Visible;
+        }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            GameWindow gameWindow = new GameWindow();
+            gameWindow.Visibility = Visibility.Visible;
+            this.Close();
         }
     }
 }

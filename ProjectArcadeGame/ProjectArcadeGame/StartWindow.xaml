@@ -19,6 +19,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button Grid.Row="3" Grid.Column="2" 
-         Click="Back_Click">back</Button>
+         Click="Back_Click">Back</Button>
+        <Button Grid.Row="2" Grid.Column="1"
+         Click="Start_Click">Start</Button>
     </Grid>
 </Window>

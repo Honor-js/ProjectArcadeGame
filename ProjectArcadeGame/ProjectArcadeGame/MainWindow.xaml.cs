@@ -20,6 +20,7 @@ namespace ProjectArcadeGame
     /// </summary>
     public partial class MainWindow : Window
     {
+        
 
         public MainWindow()
         {
@@ -31,8 +32,7 @@ namespace ProjectArcadeGame
         {
             StartWindow startWindow = new StartWindow();
             startWindow.Visibility = Visibility.Visible;
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Visibility = Visibility.Hidden;
+            this.Close();
         }
     }
 }
