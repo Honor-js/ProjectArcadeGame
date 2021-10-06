@@ -21,30 +21,8 @@ namespace ProjectArcadeGame
     public partial class GameWindow : Window
     {
         private ImageBrush PlayerSkin = new ImageBrush();
-        private bool MoveLeft, MoveRight, MoveUp, MoveDown;
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false;
         private DispatcherTimer GameTimer = new DispatcherTimer();
-        public GameWindow()
-        {
-            InitializeComponent();
-            GameTimer.Interval = TimeSpan.FromMilliseconds(16.6);
-            GameTimer.Tick += GameEngine;
-            GameTimer.Start();
-
-            PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
-            Player.Fill = PlayerSkin;
-        }
-
-        private void GameEngine(object sender, EventArgs press)
-        {
-            if (MoveLeft)
-                Canvas.SetRight(Player, Canvas.GetRight(Player) + 10);
-            if (MoveRight)
-                Canvas.SetLeft(Player, Canvas.GetLeft(Player) + 10);
-            if (MoveUp)
-                Canvas.SetBottom(Player, Canvas.GetBottom(Player) + 30);
-                Task.Delay(200);
-                Canvas.SetTop(Player, Canvas.GetTop(Player) + 30);
-        }
 
         private void KeyPress(object sender, KeyEventArgs press)
         {
@@ -54,6 +32,8 @@ namespace ProjectArcadeGame
                 MoveRight = true;
             if (press.Key == Key.Up)
                 MoveUp = true;
+            if (press.Key == Key.Down)
+                MoveDown = true;
         }
 
         private void KeyRelease(object sender, KeyEventArgs press)
@@ -64,6 +44,45 @@ namespace ProjectArcadeGame
                 MoveRight = false;
             if (press.Key == Key.Up)
                 MoveUp = false;
+            if (press.Key == Key.Down)
+                MoveDown = false;
+        }
+
+        public GameWindow()
+        {
+            InitializeComponent();
+            GameTimer.Interval = TimeSpan.FromMilliseconds(16.6);
+            GameTimer.Tick += GameEngine;
+            GameTimer.Start();
+
+            GameCanvas.Focus();
+
+            PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
+            Player.Fill = PlayerSkin;
+        }
+
+        private void GameEngine(object sender, EventArgs press)
+        {
+            //todo left en right images maken en testen
+            if (MoveLeft)
+            {
+                Canvas.SetLeft(Player, Canvas.GetLeft(Player) - 10);
+            }
+                
+            if (MoveRight)
+            {
+                Canvas.SetLeft(Player, Canvas.GetLeft(Player) + 10);
+            }
+                
+
+            //todo jump fixen want werkt niet goed
+            if (MoveUp)
+            {
+                Canvas.SetBottom(Player, Canvas.GetBottom(Player) + 30);
+                Task.Delay(200);
+                Canvas.SetBottom(Player, Canvas.GetBottom(Player) - 30);
+            }
+                
         }
     }
 }
