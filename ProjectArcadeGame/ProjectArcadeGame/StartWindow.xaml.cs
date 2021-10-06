@@ -27,8 +27,9 @@ namespace ProjectArcadeGame
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            StartWindow startWindow = new StartWindow();
-            startWindow.Visibility = Visibility.Hidden;
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Visibility = Visibility.Visible;
+            this.Close();
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)

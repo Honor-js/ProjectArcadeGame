@@ -23,5 +23,12 @@ namespace ProjectArcadeGame
         {
             InitializeComponent();
         }
+
+        private void HowToPlayBack_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Visibility = Visibility.Visible;
+            this.Close();
+        }
     }
 }

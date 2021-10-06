@@ -17,5 +17,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Button Grid.Column="2" Grid.Row="2"
+         Click="HowToPlayBack_Click">Back</Button>
     </Grid>
 </Window>
