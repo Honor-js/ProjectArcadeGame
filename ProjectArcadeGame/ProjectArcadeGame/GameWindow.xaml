@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
         Title="GameWindow" Height="450" Width="800" WindowState="Maximized">
-    <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True">
+    <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White">
         <Rectangle
             x:Name="Player"
             Fill="Red"
@@ -15,10 +15,20 @@
             Canvas.Left="10"
             Canvas.Top="296"/>
         <Rectangle
-            x:Name="ground"
+            x:Name="Ground"
             Fill="Green"
             Height="50"
-            Width="794"
+            Width="2000"
+            HorizontalAlignment="Stretch"
             Canvas.Top="371"/>
+        <Rectangle  x:Name="UnderGround"
+            Fill="Tan"
+            Height="1000"
+            Width="2000"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" 
+            Canvas.Top="420"/>
+        <Label Content="Time"/>
+
     </Canvas>
 </Window>
