@@ -132,5 +132,14 @@
   <ItemGroup>
     <Resource Include="Characters\mario.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Characters\ground_mario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Characters\mario_ground1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Characters\Mario_left.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
