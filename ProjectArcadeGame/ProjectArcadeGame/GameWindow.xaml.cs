@@ -94,6 +94,8 @@ namespace ProjectArcadeGame
             }
 
             //todo jump fixen want werkt niet goed
+            
+            
             if (MoveUp == true && Force > 0 && Jumping == false)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
@@ -106,14 +108,21 @@ namespace ProjectArcadeGame
                 Jumping = true;
             }
 
-            if (Force == 0 && Jumping == true && TopPos < 371)
+            if (Force == 0 && Jumping == true && TopPos >= 5)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
                 JumpSpeed += 1;
+                //Force += 1;
             }
-            else
+            if (TopPos == 296 && Jumping == true)
             {
                 Jumping = false;
+                Force = 12;
+            }
+            if (TopPos > 296)
+            {
+                Canvas.SetTop(Player, 296);
+                JumpSpeed = 12;
                 Force = 12;
             }
             
