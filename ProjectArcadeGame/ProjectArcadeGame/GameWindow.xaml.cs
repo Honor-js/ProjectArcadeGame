@@ -23,13 +23,14 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkin = new ImageBrush();
         private ImageBrush GroundSkin = new ImageBrush();
         private ImageBrush PlayerSkinLeft = new ImageBrush();
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false;
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;
         private DispatcherTimer GameTimer = new DispatcherTimer();
-        int gravity = 20;
-        int force;
-        const int speed = 8;
-       
-        
+        int Force = 12;
+        int Speed = 8;
+        int JumpSpeed = 12;
+
+
+
 
 
         private void KeyPress(object sender, KeyEventArgs press)
@@ -76,39 +77,46 @@ namespace ProjectArcadeGame
         {
             double TopPos = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
-            //todo left en right images maken en testen
+            double GroundTop = Canvas.GetTop(Ground);
             if (MoveLeft && LeftPos > 5)
             {
-                Canvas.SetLeft(Player, Canvas.GetLeft(Player) - speed);
+                Canvas.SetLeft(Player, Canvas.GetLeft(Player) - Speed);
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_left.png"));
                 Player.Fill = PlayerSkin;
             }
 
             if (MoveRight)
             {
-                Canvas.SetLeft(Player, Canvas.GetLeft(Player) + speed);
+                Canvas.SetLeft(Player, Canvas.GetLeft(Player) + Speed);
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
                 Player.Fill = PlayerSkin;
 
             }
 
             //todo jump fixen want werkt niet goed
-            if (MoveUp && gravity > 0 && TopPos > 10)
+            if (MoveUp == true && Force > 0 && Jumping == false)
             {
-                Canvas.SetTop(Player, Canvas.GetTop(Player) - speed);
-                MoveUp = true;
+                Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
+                JumpSpeed -= 1;
+                Force -= 1;
+            }
+
+            if (Force == 0)
+            {
+                Jumping = true;
+            }
+
+            if (Force == 0 && Jumping == true && TopPos < 371)
+            {
+                Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
+                JumpSpeed += 1;
             }
             else
             {
-                MoveUp = false;
-                gravity = 20;
+                Jumping = false;
+                Force = 12;
             }
-
-            if (MoveUp == false && TopPos < 296)
-            {
-                Canvas.SetTop(Player, Canvas.GetTop(Player) + speed);
-            }
-
+            
         }
     }
 }
