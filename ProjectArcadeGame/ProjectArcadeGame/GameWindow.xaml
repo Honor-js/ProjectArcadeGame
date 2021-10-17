@@ -16,12 +16,15 @@
             Canvas.Top="296"/>
         <Rectangle
             x:Name="Ground"
+            Tag="Platform"
             Fill="Green"
             Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
             Canvas.Top="371"/>
-        <Rectangle  x:Name="UnderGround"
+        <Rectangle 
+            x:Name="UnderGround"
+            Tag="Platform"
             Fill="Tan"
             Height="1000"
             Width="2000"

@@ -25,14 +25,11 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkinLeft = new ImageBrush();
         private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;
         private DispatcherTimer GameTimer = new DispatcherTimer();
-        int Force = 12;
+        int Force = 10;
         int Speed = 8;
-        int JumpSpeed = 12;
+        int JumpSpeed = 10;
 
-
-
-
-
+        #region KeyEvents
         private void KeyPress(object sender, KeyEventArgs press)
         {
             if (press.Key == Key.Left)
@@ -56,6 +53,9 @@ namespace ProjectArcadeGame
             if (press.Key == Key.Down)
                 MoveDown = false;
         }
+        #endregion
+
+        
 
         public GameWindow()
         {
@@ -78,6 +78,20 @@ namespace ProjectArcadeGame
             double TopPos = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
             double GroundTop = Canvas.GetTop(Ground);
+
+            foreach (var x in GameCanvas.Children.OfType<Rectangle>())
+            {
+                if (x.Tag != null)
+                {
+                    var Tag = (string)x.Tag;
+                    if (Tag == "Platform")
+                    {
+                        Rect PlayerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.Width, Player.Height);
+                        Rect PlatformHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                    }
+                }
+            }
+
             if (MoveLeft && LeftPos > 5)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - Speed);
@@ -92,40 +106,21 @@ namespace ProjectArcadeGame
                 Player.Fill = PlayerSkin;
 
             }
-
-            //todo jump fixen want werkt niet goed
             
-            
-            if (MoveUp == true && Force > 0 && Jumping == false)
+            if (MoveUp && Jumping == false && Force > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
                 JumpSpeed -= 1;
                 Force -= 1;
             }
 
-            if (Force == 0)
+            if (Force < 1)
             {
                 Jumping = true;
-            }
-
-            if (Force == 0 && Jumping == true && TopPos >= 5)
-            {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
                 JumpSpeed += 1;
                 //Force += 1;
             }
-            if (TopPos == 296 && Jumping == true)
-            {
-                Jumping = false;
-                Force = 12;
-            }
-            if (TopPos > 296)
-            {
-                Canvas.SetTop(Player, 296);
-                JumpSpeed = 12;
-                Force = 12;
-            }
-            
         }
     }
 }
