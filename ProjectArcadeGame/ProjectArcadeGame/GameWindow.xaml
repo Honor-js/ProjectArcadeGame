@@ -6,15 +6,31 @@
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
         Title="GameWindow" Height="450" Width="800" WindowState="Maximized">
-    <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White">
-        <Rectangle
+    <Grid Focusable="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="2" Focusable="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Focusable="False">Reset</Button>
+            <Button Grid.Column="2" Focusable="False">Main Menu</Button>
+        </Grid>
+
+        <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="False" Background="White" Grid.Row="0">
+            <Rectangle
             x:Name="Player"
             Fill="Red"
             Height="75"
             Width="75"
             Canvas.Left="10"
             Canvas.Top="296"/>
-        <Rectangle
+            <Rectangle
             x:Name="Ground"
             Tag="Platform"
             Fill="Green"
@@ -22,16 +38,43 @@
             Width="2000"
             HorizontalAlignment="Stretch"
             Canvas.Top="371"/>
-        <Rectangle 
+            <Rectangle 
             x:Name="UnderGround"
             Tag="Platform"
             Fill="Tan"
-            Height="1000"
+            Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
-        <Label Content="Time"/>
-
-    </Canvas>
+            <Label Content="Time"/>
+        </Canvas>
+        <Canvas KeyDown="KeyPress2" KeyUp="KeyRelease2" x:Name="GameCanvas2" Focusable="False" Background="White" Grid.Row="1">
+            <Rectangle
+            x:Name="Player2"
+            Fill="Green"
+            Height="75"
+            Width="75"
+            Canvas.Left="10"
+            Canvas.Top="296"/>
+            <Rectangle
+            x:Name="Ground2"
+            Tag="Platform"
+            Fill="Green"
+            Height="50"
+            Width="2000"
+            HorizontalAlignment="Stretch"
+            Canvas.Top="371"/>
+            <Rectangle 
+            x:Name="UnderGround2"
+            Tag="Platform"
+            Fill="Tan"
+            Height="50"
+            Width="2000"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" 
+            Canvas.Top="420"/>
+            <Label Content="Time"/>
+        </Canvas>
+    </Grid>
 </Window>

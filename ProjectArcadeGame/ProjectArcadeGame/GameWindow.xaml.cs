@@ -23,13 +23,20 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkin = new ImageBrush();
         private ImageBrush GroundSkin = new ImageBrush();
         private ImageBrush PlayerSkinLeft = new ImageBrush();
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;
-        private DispatcherTimer GameTimer = new DispatcherTimer();
+        /*Player1*/
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;      
         int Force = 10;
         int Speed = 8;
         int JumpSpeed = 10;
+        /*Player2*/
+        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, MoveDown2 = false, Jumping2 = false;
+        int Force2 = 10;
+        int Speed2 = 8;
+        int JumpSpeed2 = 10;
+        private DispatcherTimer GameTimer = new DispatcherTimer();
 
         #region KeyEvents
+        #region Player1
         private void KeyPress(object sender, KeyEventArgs press)
         {
             if (press.Key == Key.Left)
@@ -54,8 +61,34 @@ namespace ProjectArcadeGame
                 MoveDown = false;
         }
         #endregion
+        #region Player2
+        private void KeyPress2(object sender, KeyEventArgs press)
+        {
+            if (press.Key == Key.A)
+                MoveLeft2 = true;
+            if (press.Key == Key.D)
+                MoveRight2 = true;
+            if (press.Key == Key.W)
+                MoveUp2 = true;
+            if (press.Key == Key.S)
+                MoveDown2 = true;
+        }
 
-        
+        private void KeyRelease2(object sender, KeyEventArgs press)
+        {
+            if (press.Key == Key.A)
+                MoveLeft2 = false;
+            if (press.Key == Key.D)
+                MoveRight2 = false;
+            if (press.Key == Key.W)
+                MoveUp2 = false;
+            if (press.Key == Key.S)
+                MoveDown2 = false;
+        }
+        #endregion
+        #endregion
+
+
 
         public GameWindow()
         {
@@ -72,7 +105,7 @@ namespace ProjectArcadeGame
             Ground.Fill = GroundSkin;
            
         }
-
+        #region Player1
         private void GameEngine(object sender, EventArgs press)
         {
             double TopPos = Canvas.GetTop(Player);
@@ -119,8 +152,9 @@ namespace ProjectArcadeGame
                 Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
                 JumpSpeed += 1;
-                //Force += 1;
+                Force += 1;
             }
         }
+        #endregion 
     }
 }
