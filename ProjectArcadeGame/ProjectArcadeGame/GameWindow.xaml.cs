@@ -1,8 +1,12 @@
-﻿using System;
+﻿using NuGet.Protocol.Plugins;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.MobileControls;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -25,9 +29,11 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkinLeft = new ImageBrush();
         private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;
         private DispatcherTimer GameTimer = new DispatcherTimer();
+        private int time;
         int Force = 10;
         int Speed = 8;
         int JumpSpeed = 10;
+        int Highscore;
 
         #region KeyEvents
         private void KeyPress(object sender, KeyEventArgs press)
@@ -55,7 +61,7 @@ namespace ProjectArcadeGame
         }
         #endregion
 
-        
+
 
         public GameWindow()
         {
@@ -70,7 +76,7 @@ namespace ProjectArcadeGame
             Player.Fill = PlayerSkin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             Ground.Fill = GroundSkin;
-           
+
         }
 
         private void GameEngine(object sender, EventArgs press)
@@ -106,7 +112,7 @@ namespace ProjectArcadeGame
                 Player.Fill = PlayerSkin;
 
             }
-            
+
             if (MoveUp && Jumping == false && Force > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
@@ -121,5 +127,32 @@ namespace ProjectArcadeGame
                 JumpSpeed += 1;
             }
         }
+        #region Database
+        private void AddHighscoreToDatabase(int Highscore)
+        {
+            string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
+            string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Date]) VALUES ('" +
+             Highscore + "','Name','" + DateTime.Today + "')";
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand();
+            try
+            {
+                command.CommandText = query;
+                command.CommandType = CommandType.Text;
+                command.Connection = connection;
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                connection.Close();
+            }
+        }
+        #endregion
     }
 }
+
+
+
