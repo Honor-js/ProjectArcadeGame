@@ -9,7 +9,7 @@
     <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White">
         <Rectangle
             x:Name="Player"
-            Tag="Platform"
+            
             Fill="Red"
             Height="75"
             Width="75"
@@ -22,7 +22,8 @@
             Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
-            Canvas.Top="371"/>
+            Canvas.Top="371"
+            Canvas.Left="0"/>
         <Rectangle 
             x:Name="UnderGround"
             Tag="Platform"

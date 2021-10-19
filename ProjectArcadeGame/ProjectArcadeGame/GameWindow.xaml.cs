@@ -84,6 +84,13 @@ namespace ProjectArcadeGame
                     {
                         Rect PlayerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.Width, Player.Height);
                         Rect PlatformHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                        
+                        if (PlayerHitBox.IntersectsWith(PlatformHitBox))
+                        {
+                            Force = 10;
+                            JumpSpeed = 10;
+                            Jumping = false;
+                        }
                     }
                 }
             }
@@ -109,12 +116,12 @@ namespace ProjectArcadeGame
                 JumpSpeed -= 1;
                 Force -= 1;
             }
-
-            if (Force < 1)
+            if (Force <= 1)
             {
                 Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
                 JumpSpeed += 1;
+                Force += 1;
             }
         }
     }
