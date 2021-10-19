@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
         Title="GameWindow" Height="450" Width="800" WindowState="Maximized">
-    <Grid Focusable="True">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
@@ -19,10 +19,10 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0" Focusable="False">Reset</Button>
-            <Button Grid.Column="2" Focusable="False">Main Menu</Button>
+            <Button Grid.Column="2" Focusable="False" Click="Button_Click">Main Menu</Button>
         </Grid>
 
-        <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="False" Background="White" Grid.Row="0">
+        <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White" Grid.Row="0">
             <Rectangle
             x:Name="Player"
             Fill="Red"
