@@ -23,7 +23,7 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkin = new ImageBrush();
         private ImageBrush GroundSkin = new ImageBrush();
         private ImageBrush PlayerSkinLeft = new ImageBrush();
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, Jumping = false;
         private DispatcherTimer GameTimer = new DispatcherTimer();
         int Force = 10;
         int Speed = 8;
@@ -38,8 +38,6 @@ namespace ProjectArcadeGame
                 MoveRight = true;
             if (press.Key == Key.Up)
                 MoveUp = true;
-            if (press.Key == Key.Down)
-                MoveDown = true;
         }
 
         private void KeyRelease(object sender, KeyEventArgs press)
@@ -50,8 +48,6 @@ namespace ProjectArcadeGame
                 MoveRight = false;
             if (press.Key == Key.Up)
                 MoveUp = false;
-            if (press.Key == Key.Down)
-                MoveDown = false;
         }
         #endregion
 
@@ -106,8 +102,8 @@ namespace ProjectArcadeGame
                 Player.Fill = PlayerSkin;
 
             }
-            
-            if (MoveUp && Jumping == false && Force > 0)
+
+            if (MoveUp == true && Jumping == false && Force > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
                 JumpSpeed -= 1;

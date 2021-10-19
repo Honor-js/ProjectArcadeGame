@@ -9,6 +9,7 @@
     <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White">
         <Rectangle
             x:Name="Player"
+            Tag="Platform"
             Fill="Red"
             Height="75"
             Width="75"
