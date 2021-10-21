@@ -35,9 +35,9 @@ namespace ProjectArcadeGame
         private DispatcherTimer GameTimer = new DispatcherTimer();
 
         #region KeyEvents
-        #region Player1
         private void KeyPress(object sender, KeyEventArgs press)
         {
+            //Player1
             if (press.Key == Key.Left)
                 MoveLeft = true;
             if (press.Key == Key.Right)
@@ -46,23 +46,7 @@ namespace ProjectArcadeGame
                 MoveUp = true;
             if (press.Key == Key.Down)
                 MoveDown = true;
-        }
-
-        private void KeyRelease(object sender, KeyEventArgs press)
-        {
-            if (press.Key == Key.Left)
-                MoveLeft = false;
-            if (press.Key == Key.Right)
-                MoveRight = false;
-            if (press.Key == Key.Up)
-                MoveUp = false;
-            if (press.Key == Key.Down)
-                MoveDown = false;
-        }
-        #endregion
-        #region Player2
-        private void KeyPress2(object sender, KeyEventArgs press)
-        {
+            //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = true;
             if (press.Key == Key.D)
@@ -73,8 +57,18 @@ namespace ProjectArcadeGame
                 MoveDown2 = true;
         }
 
-        private void KeyRelease2(object sender, KeyEventArgs press)
+        private void KeyRelease(object sender, KeyEventArgs press)
         {
+            //Player1
+            if (press.Key == Key.Left)
+                MoveLeft = false;
+            if (press.Key == Key.Right)
+                MoveRight = false;
+            if (press.Key == Key.Up)
+                MoveUp = false;
+            if (press.Key == Key.Down)
+                MoveDown = false;
+            //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = false;
             if (press.Key == Key.D)
@@ -85,8 +79,6 @@ namespace ProjectArcadeGame
                 MoveDown2 = false;
         }
         #endregion
-        #endregion
-
 
 
         public GameWindow()
@@ -97,7 +89,7 @@ namespace ProjectArcadeGame
             GameTimer.Start();
 
             GameCanvas.Focus();
-            GameCanvas2.Focus();
+
 
             //Player1
             PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
@@ -109,7 +101,7 @@ namespace ProjectArcadeGame
             //PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
             //Player2.Fill = PlayerSkin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
-            Ground2.Fill = GroundSkin;
+            //Ground2.Fill = GroundSkin;
 
         }
 

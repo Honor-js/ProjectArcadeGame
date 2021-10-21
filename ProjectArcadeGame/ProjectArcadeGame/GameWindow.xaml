@@ -9,10 +9,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="2" Focusable="False">
+        <Grid Grid.Row="1" Focusable="False">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -23,6 +22,8 @@
         </Grid>
 
         <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White" Grid.Row="0">
+            <!--#region Player1-->
+            <!--Player1-->
             <Rectangle
             x:Name="Player"
             Fill="Red"
@@ -47,16 +48,17 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
-            <Label Content="Time"/>
-        </Canvas>
-        <Canvas KeyDown="KeyPress2" KeyUp="KeyRelease2" x:Name="GameCanvas2" Focusable="True" FocusManager.IsFocusScope="True" Background="White" Grid.Row="1">
+            <Label Content="Time" HorizontalAlignment="Left"/>
+            <!--#endregion-->
+            <!--#region Player2-->
+            <!--Player2-->
             <Rectangle
             x:Name="Player2"
             Fill="Green"
             Height="75"
             Width="75"
             Canvas.Left="10"
-            Canvas.Top="296"/>
+            Canvas.Top="592"/>
             <Rectangle
             x:Name="Ground2"
             Tag="Platform"
@@ -64,7 +66,7 @@
             Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
-            Canvas.Top="371"/>
+            Canvas.Top="742"/>
             <Rectangle 
             x:Name="UnderGround2"
             Tag="Platform"
@@ -73,8 +75,10 @@
             Width="2000"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
-            Canvas.Top="420"/>
-            <Label Content="Time"/>
+            Canvas.Top="840"/>
+            <Label Content="Time2" Canvas.Left="100"/>
+            <!--#endregion-->
         </Canvas>
+        
     </Grid>
 </Window>
