@@ -24,12 +24,12 @@ namespace ProjectArcadeGame
         private ImageBrush GroundSkin = new ImageBrush();
         private ImageBrush PlayerSkinLeft = new ImageBrush();
         /*Player1*/
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false, MoveDown = false, Jumping = false;      
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, Jumping = false;      
         int Force = 10;
         int Speed = 8;
         int JumpSpeed = 10;
         /*Player2*/
-        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, MoveDown2 = false, Jumping2 = false;
+        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, Jumping2 = false;
         int Force2 = 10;
         int JumpSpeed2 = 10;
         private DispatcherTimer GameTimer = new DispatcherTimer();
@@ -44,8 +44,6 @@ namespace ProjectArcadeGame
                 MoveRight = true;
             if (press.Key == Key.Up)
                 MoveUp = true;
-            if (press.Key == Key.Down)
-                MoveDown = true;
             //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = true;
@@ -53,8 +51,6 @@ namespace ProjectArcadeGame
                 MoveRight2 = true;
             if (press.Key == Key.W)
                 MoveUp2 = true;
-            if (press.Key == Key.S)
-                MoveDown2 = true;
         }
 
         private void KeyRelease(object sender, KeyEventArgs press)
@@ -66,8 +62,6 @@ namespace ProjectArcadeGame
                 MoveRight = false;
             if (press.Key == Key.Up)
                 MoveUp = false;
-            if (press.Key == Key.Down)
-                MoveDown = false;
             //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = false;
@@ -75,8 +69,6 @@ namespace ProjectArcadeGame
                 MoveRight2 = false;
             if (press.Key == Key.W)
                 MoveUp2 = false;
-            if (press.Key == Key.S)
-                MoveDown2 = false;
         }
         #endregion
 
