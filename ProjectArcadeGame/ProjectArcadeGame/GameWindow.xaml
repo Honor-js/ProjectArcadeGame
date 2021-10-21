@@ -49,7 +49,7 @@
             Canvas.Top="420"/>
             <Label Content="Time"/>
         </Canvas>
-        <Canvas KeyDown="KeyPress2" KeyUp="KeyRelease2" x:Name="GameCanvas2" Focusable="False" Background="White" Grid.Row="1">
+        <Canvas KeyDown="KeyPress2" KeyUp="KeyRelease2" x:Name="GameCanvas2" Focusable="True" FocusManager.IsFocusScope="True" Background="White" Grid.Row="1">
             <Rectangle
             x:Name="Player2"
             Fill="Green"
