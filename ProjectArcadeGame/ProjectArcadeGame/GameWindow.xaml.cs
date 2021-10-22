@@ -82,16 +82,11 @@ namespace ProjectArcadeGame
             GameTimer.Start();
 
             GameCanvas.Focus();
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 0ae2e48 (Continuation of P2)
 
             PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
             Player.Fill = PlayerSkin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             Ground.Fill = GroundSkin;
-<<<<<<< HEAD
 
             //Player2
             //PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
@@ -99,9 +94,6 @@ namespace ProjectArcadeGame
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             //Ground2.Fill = GroundSkin;
 
-=======
-           
->>>>>>> parent of 0ae2e48 (Continuation of P2)
         }
         #region Player1
         private void GameEngine(object sender, EventArgs press)
@@ -119,6 +111,13 @@ namespace ProjectArcadeGame
                     {
                         Rect PlayerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.Width, Player.Height);
                         Rect PlatformHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                        
+                        if (PlayerHitBox.IntersectsWith(PlatformHitBox))
+                        {
+                            Force = 10;
+                            JumpSpeed = 10;
+                            Jumping = false;
+                        }
                     }
                 }
             }

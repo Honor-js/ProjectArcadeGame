@@ -30,6 +30,7 @@
 >>>>>>> parent of 0ae2e48 (Continuation of P2)
             <Rectangle
             x:Name="Player"
+            
             Fill="Red"
             Height="75"
             Width="75"
@@ -42,8 +43,9 @@
             Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
-            Canvas.Top="371"/>
-            <Rectangle 
+            Canvas.Top="371"
+            Canvas.Left="0"/>
+        <Rectangle 
             x:Name="UnderGround"
             Tag="Platform"
             Fill="Tan"
