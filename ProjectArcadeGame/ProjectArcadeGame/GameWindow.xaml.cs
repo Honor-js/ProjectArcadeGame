@@ -31,11 +31,12 @@ namespace ProjectArcadeGame
 
         int Speed = 8;
         /*Player1*/
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false, Jumping = false;      
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
         int Force = 10;
         int JumpSpeed = 10;
         private int time;
         int Highscore;
+        
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, Jumping2 = false;
         int Force2 = 10;
@@ -67,15 +68,15 @@ namespace ProjectArcadeGame
                 MoveLeft = false;
             if (press.Key == Key.Right)
                 MoveRight = false;
-            if (press.Key == Key.Up)
-                MoveUp = false;
+            //if (press.Key == Key.Up)
+                //MoveUp = false;
             //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = false;
             if (press.Key == Key.D)
                 MoveRight2 = false;
-            if (press.Key == Key.W)
-                MoveUp2 = false;
+            //if (press.Key == Key.W)
+                //MoveUp2 = false;
         }
         #endregion
 
@@ -106,9 +107,10 @@ namespace ProjectArcadeGame
         private void GameEngine(object sender, EventArgs press)
         {
             //Player1
-            double TopPos = Canvas.GetTop(Player);
+            double LastTop;
+            double CurrentTop = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
-            double GroundTop = Canvas.GetTop(Ground);
+
 
             //Player2
             double LeftPos2 = Canvas.GetLeft(Player2);
@@ -127,7 +129,7 @@ namespace ProjectArcadeGame
                         {
                             Force = 10;
                             JumpSpeed = 10;
-                            Jumping = false;
+                            //Jumping = false;
                         }
                     }
                 }
@@ -149,20 +151,21 @@ namespace ProjectArcadeGame
 
             }
 
-            if (MoveUp && Jumping == false && Force > 0)
+            if (MoveUp == true /*&& Jumping == false */&& Force > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
                 JumpSpeed -= 1;
-                Force -= 1;
+                //Force -= 1;
             }
 
             if (Force < 1)
             {
-                Jumping = true;
+                //Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
                 JumpSpeed += 1;
                 Force += 1;
             }
+            LastTop = CurrentTop;
 
             //Player2
             if (MoveLeft2 && LeftPos2 > 5)
@@ -199,9 +202,6 @@ namespace ProjectArcadeGame
             }*/
             #endregion
         }
-        #endregion
-
-        #region Reset Logic
         #endregion
 
         #region Button Logic
