@@ -9,5 +9,13 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("characters/luigi_left.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("core/compression/snappy/lib/win/snappy32.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("core/compression/snappy/lib/win/snappy64.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("core/compression/zstandard/lib/win/libzstd.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mongocrypt.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mongocrypt.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("snappy32.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("snappy64.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("libzstd.dll")]
 
 

@@ -1,8 +1,12 @@
-﻿using System;
+﻿using NuGet.Protocol.Plugins;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.MobileControls;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -30,6 +34,8 @@ namespace ProjectArcadeGame
         private bool MoveLeft = false, MoveRight = false, MoveUp = false, Jumping = false;      
         int Force = 10;
         int JumpSpeed = 10;
+        private int time;
+        int Highscore;
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, Jumping2 = false;
         int Force2 = 10;
@@ -142,7 +148,7 @@ namespace ProjectArcadeGame
                 Player.Fill = PlayerSkin;
 
             }
-            
+
             if (MoveUp && Jumping == false && Force > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
@@ -221,5 +227,32 @@ namespace ProjectArcadeGame
             //todo Reset timer Player2
         }
         #endregion
+        #region Database
+        private void AddHighscoreToDatabase(int Highscore) //Database = Microsoft SQL Express
+        {
+            string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
+            string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Date]) VALUES ('" +
+             Highscore + "','Name','" + DateTime.Today + "')";
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand();
+            try
+            {
+                command.CommandText = query;
+                command.CommandType = CommandType.Text;
+                command.Connection = connection;
+
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                connection.Close();
+            }
+        }
+        #endregion
     }
 }
+
+
+
