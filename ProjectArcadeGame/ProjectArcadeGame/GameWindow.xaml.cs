@@ -128,7 +128,7 @@ namespace ProjectArcadeGame
             }
         }
         #region Database
-        private void AddHighscoreToDatabase(int Highscore)
+        private void AddHighscoreToDatabase(int Highscore) //Database = Microsoft SQL Express
         {
             string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
             string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Date]) VALUES ('" +
