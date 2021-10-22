@@ -32,7 +32,7 @@ namespace ProjectArcadeGame
         int Speed = 8;
         /*Player1*/
         private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
-        int Force = 1;
+        int Force = 0;
         int JumpSpeed = 10;
         private int time;
         int Highscore;
@@ -111,7 +111,6 @@ namespace ProjectArcadeGame
             double CurrentTop = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
 
-
             //Player2
             double LeftPos2 = Canvas.GetLeft(Player2);
 
@@ -148,23 +147,21 @@ namespace ProjectArcadeGame
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) + Speed);
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
                 Player.Fill = PlayerSkin;
-
             }
 
-            if (MoveUp == true /*&& Jumping == false */&& JumpSpeed != 0)
+            if (MoveUp == true && JumpSpeed != 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
-                JumpSpeed -= 1;
+                JumpSpeed --;
                 //Force -= 1;
             }
 
-            else if (JumpSpeed == 0 && Force != 10)
+            else if (MoveUp == true && JumpSpeed == 0 && Force >= 10)
             {
                 //Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
                 //JumpSpeed += 1;
-                Force += 1;
-                
+                Force ++;
             }
 
             else
