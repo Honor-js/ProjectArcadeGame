@@ -21,17 +21,18 @@ namespace ProjectArcadeGame
     public partial class GameWindow : Window
     {
         private ImageBrush PlayerSkin = new ImageBrush();
+        private ImageBrush Player2Skin = new ImageBrush();
         private ImageBrush GroundSkin = new ImageBrush();
-        private ImageBrush PlayerSkinLeft = new ImageBrush();
+        //private ImageBrush PlayerSkinLeft = new ImageBrush();
+
+        int Speed = 8;
         /*Player1*/
         private bool MoveLeft = false, MoveRight = false, MoveUp = false, Jumping = false;      
         int Force = 10;
-        int Speed = 8;
         int JumpSpeed = 10;
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, Jumping2 = false;
         int Force2 = 10;
-        int Speed2 = 8;
         int JumpSpeed2 = 10;
         private DispatcherTimer GameTimer = new DispatcherTimer();
 
@@ -53,7 +54,6 @@ namespace ProjectArcadeGame
             if (press.Key == Key.W)
                 MoveUp2 = true;
         }
-
         private void KeyRelease(object sender, KeyEventArgs press)
         {
             //Player1
@@ -83,24 +83,29 @@ namespace ProjectArcadeGame
 
             GameCanvas.Focus();
 
+            //Player1
             PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
             Player.Fill = PlayerSkin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             Ground.Fill = GroundSkin;
 
             //Player2
-            //PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
-            //Player2.Fill = PlayerSkin;
+            Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi.png"));
+            Player2.Fill = Player2Skin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
-            //Ground2.Fill = GroundSkin;
+            Ground2.Fill = GroundSkin;
 
         }
-        #region Player1
+        #region Game Logic
         private void GameEngine(object sender, EventArgs press)
         {
+            //Player1
             double TopPos = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
             double GroundTop = Canvas.GetTop(Ground);
+
+            //Player2
+            double LeftPos2 = Canvas.GetLeft(Player2);
 
             foreach (var x in GameCanvas.Children.OfType<Rectangle>())
             {
@@ -122,6 +127,7 @@ namespace ProjectArcadeGame
                 }
             }
 
+            //Player1
             if (MoveLeft && LeftPos > 5)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - Speed);
@@ -151,7 +157,69 @@ namespace ProjectArcadeGame
                 JumpSpeed += 1;
                 Force += 1;
             }
+
+            //Player2
+            if (MoveLeft2 && LeftPos2 > 5)
+            {
+                Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) - Speed);
+                Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi_left.png"));
+                Player2.Fill = Player2Skin;
+            }
+
+            if (MoveRight2)
+            {
+                Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) + Speed);
+                Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi.png"));
+                Player2.Fill = Player2Skin;
+
+            }
+
+            #region Reset Logic
+            /*//Player1
+            if ((LeftPos >= 50 && LeftPos <= 60 && TopPos > 295))
+            {
+                Canvas.SetLeft(Player, 10);
+                Canvas.SetTop(Player, 296);
+                JumpSpeed = 10;
+                Force = 10;
+            }/*
+            //Player2
+            if (LeftPos2 >= 50 && LeftPos2 <= 60)
+            {
+                Canvas.SetLeft(Player2, 10);
+                Canvas.SetTop(Player2, 296);
+                JumpSpeed2 = 10;
+                Force2 = 10;
+            }*/
+            #endregion
         }
-        #endregion 
+        #endregion
+
+        #region Reset Logic
+        #endregion
+
+        #region Button Logic
+        private void MainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Visibility = Visibility.Visible;
+            this.Close();
+        }
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+            //Player1
+            Canvas.SetLeft(Player, 10);
+            Canvas.SetTop(Player, 296);
+            JumpSpeed = 10;
+            Force = 10;
+            //todo Reset timer Player1
+            //Player2
+            Canvas.SetLeft(Player2, 10);
+            Canvas.SetTop(Player2, 296);
+            JumpSpeed2 = 10;
+            Force2 = 10;
+            //todo Reset timer Player2
+        }
+        #endregion
     }
 }

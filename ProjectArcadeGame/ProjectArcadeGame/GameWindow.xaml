@@ -6,31 +6,26 @@
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
         Title="GameWindow" Height="450" Width="800" WindowState="Maximized">
-    <Grid Focusable="True">
+    <Grid Focusable="False">
         <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1" Focusable="False">
+        <Grid Grid.Row="2" Focusable="False">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Focusable="False">Reset</Button>
-            <Button Grid.Column="2" Focusable="False">Main Menu</Button>
+            <Button Grid.Column="0" Focusable="False" Click="Reset_Click">Reset</Button>
+            <Button Grid.Column="2" Focusable="False" Click="MainMenu_Click">Main Menu</Button>
         </Grid>
 
-<<<<<<< HEAD
         <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="True" Background="White" Grid.Row="0">
             <!--#region Player1-->
-            <!--Player1-->
-=======
-        <Canvas KeyDown="KeyPress" KeyUp="KeyRelease" x:Name="GameCanvas" Focusable="False" Background="White" Grid.Row="0">
->>>>>>> parent of 0ae2e48 (Continuation of P2)
             <Rectangle
             x:Name="Player"
-            
             Fill="Red"
             Height="75"
             Width="75"
@@ -56,15 +51,16 @@
             Canvas.Top="420"/>
             <Label Content="Time" HorizontalAlignment="Left"/>
             <!--#endregion-->
+        </Canvas>
+        <Canvas x:Name="GameCanvas2" FocusManager.IsFocusScope="True" Background="White" Grid.Row="1">
             <!--#region Player2-->
-            <!--Player2-->
             <Rectangle
-            x:Name="Player2"
+            x:Name="Player2" 
             Fill="Green"
             Height="75"
             Width="75"
             Canvas.Left="10"
-            Canvas.Top="592"/>
+            Canvas.Top="296"/>
             <Rectangle
             x:Name="Ground2"
             Tag="Platform"
@@ -72,7 +68,8 @@
             Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
-            Canvas.Top="742"/>
+            Canvas.Top="371"
+            Canvas.Left="0"/>
             <Rectangle 
             x:Name="UnderGround2"
             Tag="Platform"
@@ -81,10 +78,9 @@
             Width="2000"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
-            Canvas.Top="840"/>
-            <Label Content="Time2" Canvas.Left="100"/>
+            Canvas.Top="420"/>
+            <Label Content="Time" HorizontalAlignment="Left"/>
             <!--#endregion-->
         </Canvas>
-        
     </Grid>
 </Window>
