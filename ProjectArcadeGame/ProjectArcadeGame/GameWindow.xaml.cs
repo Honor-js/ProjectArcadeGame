@@ -32,7 +32,7 @@ namespace ProjectArcadeGame
         int Speed = 8;
         /*Player1*/
         private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
-        int Force = 10;
+        int Force = 0;
         int JumpSpeed = 10;
         private int time;
         int Highscore;
@@ -151,19 +151,27 @@ namespace ProjectArcadeGame
 
             }
 
-            if (MoveUp == true /*&& Jumping == false */&& Force > 0)
+            if (MoveUp == true /*&& Jumping == false */&& JumpSpeed != 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
                 JumpSpeed -= 1;
                 //Force -= 1;
             }
 
-            if (Force < 1)
+            else if (JumpSpeed == 0 && Force != 10)
             {
                 //Jumping = true;
-                Canvas.SetTop(Player, Canvas.GetTop(Player) + JumpSpeed);
-                JumpSpeed += 1;
+                Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
+                //JumpSpeed += 1;
                 Force += 1;
+                
+            }
+
+            else
+            {
+                MoveUp = false;
+                JumpSpeed = 10;
+                Force = 0;
             }
             LastTop = CurrentTop;
 
