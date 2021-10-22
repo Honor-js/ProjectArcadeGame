@@ -31,6 +31,7 @@ namespace ProjectArcadeGame
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, Jumping2 = false;
         int Force2 = 10;
+        int Speed2 = 8;
         int JumpSpeed2 = 10;
         private DispatcherTimer GameTimer = new DispatcherTimer();
 
@@ -81,13 +82,16 @@ namespace ProjectArcadeGame
             GameTimer.Start();
 
             GameCanvas.Focus();
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 0ae2e48 (Continuation of P2)
 
-            //Player1
             PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
             Player.Fill = PlayerSkin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             Ground.Fill = GroundSkin;
+<<<<<<< HEAD
 
             //Player2
             //PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
@@ -95,19 +99,17 @@ namespace ProjectArcadeGame
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             //Ground2.Fill = GroundSkin;
 
+=======
+           
+>>>>>>> parent of 0ae2e48 (Continuation of P2)
         }
-
+        #region Player1
         private void GameEngine(object sender, EventArgs press)
         {
-            //Player1
             double TopPos = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
             double GroundTop = Canvas.GetTop(Ground);
-            //Player2
-            double LeftPos2 = Canvas.GetLeft(Player2);
 
-            Rect PlayerHitBox ;
-            Rect PlatformHitBox ;
             foreach (var x in GameCanvas.Children.OfType<Rectangle>())
             {
                 if (x.Tag != null)
@@ -115,43 +117,27 @@ namespace ProjectArcadeGame
                     var Tag = (string)x.Tag;
                     if (Tag == "Platform")
                     {
-                        PlayerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.Width, Player.Height);
-                        PlatformHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                        Rect PlayerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.Width, Player.Height);
+                        Rect PlatformHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
                     }
                 }
             }
 
-            //Player1 MoveLeft
             if (MoveLeft && LeftPos > 5)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - Speed);
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_left.png"));
                 Player.Fill = PlayerSkin;
             }
-            //Player2 MoveLeft
-            if (MoveLeft2 && LeftPos2 > 5)
-            {
-                Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) - Speed);
-                //PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_left.png"));
-                //Player.Fill = PlayerSkin;
-            }
 
-            //Player1 MoveRight
             if (MoveRight)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) + Speed);
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
                 Player.Fill = PlayerSkin;
-            }
-            //Player2 MoveRight
-            if (MoveRight2)
-            {
-                Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) + Speed);
-                //PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
-                //Player.Fill = PlayerSkin;
-            }
 
-            //Player1
+            }
+            
             if (MoveUp && Jumping == false && Force > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
@@ -159,7 +145,6 @@ namespace ProjectArcadeGame
                 Force -= 1;
             }
 
-            //Player1
             if (Force < 1)
             {
                 Jumping = true;
@@ -168,11 +153,6 @@ namespace ProjectArcadeGame
                 Force += 1;
             }
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Visibility = Visibility.Visible;
-            this.Close();
-        }
+        #endregion 
     }
 }
