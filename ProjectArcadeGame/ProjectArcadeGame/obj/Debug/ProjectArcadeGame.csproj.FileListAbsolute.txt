@@ -1,242 +1,3 @@
-.l,,C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.AssemblyReference.cache
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\App.g.cs
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.cache
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.lref
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.baml
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.baml
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.baml
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.baml
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.baml
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.baml
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.g.resources
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.Properties.Resources.resources
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.GenerateResource.cache
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
-C:\Users\jason\Desktop\Arcade Project\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csprojAssemblyReference.cache
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\App.g.cs
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.cache
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.lref
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.baml
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.baml
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.baml
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.baml
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.baml
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.baml
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.g.resources
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.Properties.Resources.resources
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.GenerateResource.cache
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.AssemblyReference.cache
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\App.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.cache
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.lref
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.baml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.baml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.baml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.baml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.baml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.baml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.g.resources
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.Properties.Resources.resources
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.GenerateResource.cache
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\OSExtensions.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy32.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy64.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\libzstd.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\x86\KernelTraceControl.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\x86\KernelTraceControl.Win61.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\x86\msdia140.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\x86\msvcp140.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\x86\vcruntime140.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\KernelTraceControl.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\msdia140.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\msvcp140.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\vcruntime140.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\vcruntime140_1.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\TraceReloggerLib.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Dia2Lib.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\mongocrypt.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\DnsClient.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.Framework.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.Utilities.Core.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.FastSerialization.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.DotNet.Cli.Utils.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Extensions.DependencyModel.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Logging.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.Security.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.TeamFoundation.Common.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.Common.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.WebApi.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Bson.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Driver.Core.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Driver.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Libmongocrypt.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Newtonsoft.Json.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Common.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Configuration.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.DependencyResolver.Core.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Frameworks.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.LibraryModel.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Packaging.Core.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Packaging.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.ProjectModel.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Protocol.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Versioning.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Owin.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Common.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Interfaces.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Text.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\SharpCompress.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Buffers.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Collections.Immutable.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Data.SqlClient.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Memory.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.ValueTuple.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\DnsClient.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.Framework.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.Utilities.Core.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.FastSerialization.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Logging.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Tokens.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.Security.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.TeamFoundation.Common.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.Common.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.WebApi.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Bson.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Driver.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Driver.Core.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Newtonsoft.Json.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Common.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Configuration.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.DependencyResolver.Core.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Frameworks.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.LibraryModel.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Packaging.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Packaging.Core.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.ProjectModel.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Protocol.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Versioning.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Common.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Text.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Buffers.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Collections.Immutable.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Data.SqlClient.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Memory.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.ValueTuple.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\cs\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\de\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\es\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\fr\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\it\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ja\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ko\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pl\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pt-BR\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ru\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\tr\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hans\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hant\Microsoft.DotNet.Cli.Utils.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\cs\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\de\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\es\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\fr\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\it\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ja\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ko\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pl\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pt-BR\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ru\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\tr\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hans\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hant\Microsoft.TeamFoundation.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\cs\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\de\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\es\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\fr\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\it\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ja\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ko\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pl\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pt-BR\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ru\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\tr\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.Common.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\cs\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\de\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\es\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\fr\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\it\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ja\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ko\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pl\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\pt-BR\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ru\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\tr\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_Content.g.cs
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CopyComplete
-C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\OSExtensions.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy32.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy64.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\libzstd.dll
@@ -252,7 +13,11 @@ C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcad
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\vcruntime140_1.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\TraceReloggerLib.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Dia2Lib.dll
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\OSExtensions.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\mongocrypt.dll
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.pdb
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\DnsClient.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
@@ -397,7 +162,29 @@ C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcad
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\tr\Microsoft.VisualStudio.Services.WebApi.resources.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.WebApi.resources.dll
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.WebApi.resources.dll
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csprojAssemblyReference.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.g.cs
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\WindowTest.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\App.g.cs
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_Content.g.cs
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame_MarkupCompile.lref
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\HowToPlay.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\MainWindow.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\StartWindow.baml
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\WindowTest.baml
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.g.resources
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.Properties.Resources.resources
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.GenerateResource.cache
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CoreCompileInputs.cache
 C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.CopyComplete
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.exe
+C:\Users\marte\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.pdb

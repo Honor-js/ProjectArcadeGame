@@ -32,7 +32,7 @@ namespace ProjectArcadeGame
         int Speed = 8;
         /*Player1*/
         private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
-        int Force = 0;
+        int Force = 1;
         int JumpSpeed = 10;
         private int time;
         int Highscore;
@@ -225,7 +225,7 @@ namespace ProjectArcadeGame
             Canvas.SetLeft(Player, 10);
             Canvas.SetTop(Player, 296);
             JumpSpeed = 10;
-            Force = 10;
+            Force = 0;
             //todo Reset timer Player1
             //Player2
             Canvas.SetLeft(Player2, 10);
