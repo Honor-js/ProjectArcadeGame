@@ -32,7 +32,7 @@ namespace ProjectArcadeGame
         int Speed = 8;
         /*Player1*/
         private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
-        int Force = 0;
+        int Force = 10;
         int JumpSpeed = 10;
         private int time;
         int Highscore;
@@ -107,14 +107,15 @@ namespace ProjectArcadeGame
         private void GameEngine(object sender, EventArgs press)
         {
             //Player1
-            double LastTop;
+            double LastTop = 0;
             double CurrentTop = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
+            double BaseTop = 296;
 
             //Player2
             double LeftPos2 = Canvas.GetLeft(Player2);
 
-            foreach (var x in GameCanvas.Children.OfType<Rectangle>())
+            /*foreach (var x in GameCanvas.Children.OfType<Rectangle>())
             {
                 if (x.Tag != null)
                 {
@@ -132,7 +133,7 @@ namespace ProjectArcadeGame
                         }
                     }
                 }
-            }
+            }*/
 
             //Player1
             if (MoveLeft && LeftPos > 5)
@@ -149,30 +150,31 @@ namespace ProjectArcadeGame
                 Player.Fill = PlayerSkin;
             }
 
-            if (MoveUp == true && JumpSpeed != 0)
+            if (MoveUp == true && JumpSpeed > 0/* && Force == 10*/)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
-                JumpSpeed --;
-                //Force -= 1;
+                JumpSpeed -= 1;
+                Force -= 1;
             }
 
-            else if (MoveUp == true && JumpSpeed == 0 && Force >= 10)
+            if (MoveUp == true && JumpSpeed == 0 && Force <= 10)
             {
                 //Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
                 //JumpSpeed += 1;
-                Force ++;
+                Force += 1;
+                if (Force > 10)
+                {
+                    JumpSpeed = 10;
+                    Force = 10;
+                    MoveUp = false;
+                }
             }
 
-            else
-            {
-                MoveUp = false;
-                JumpSpeed = 10;
-                Force = 0;
-            }
+            
             LastTop = CurrentTop;
 
-            //Player2
+            /*//Player2
             if (MoveLeft2 && LeftPos2 > 5)
             {
                 Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) - Speed);
@@ -189,7 +191,7 @@ namespace ProjectArcadeGame
             }
 
             #region Reset Logic
-            /*//Player1
+            /*Player1
             if ((LeftPos >= 50 && LeftPos <= 60 && TopPos > 295))
             {
                 Canvas.SetLeft(Player, 10);
@@ -207,7 +209,7 @@ namespace ProjectArcadeGame
             }*/
             #endregion
         }
-        #endregion
+        //#endregion
 
         #region Button Logic
         private void MainMenu_Click(object sender, RoutedEventArgs e)
