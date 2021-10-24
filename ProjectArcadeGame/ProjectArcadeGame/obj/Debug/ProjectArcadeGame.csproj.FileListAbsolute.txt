@@ -1,3 +1,4 @@
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\OSExtensions.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy32.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy64.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\libzstd.dll
@@ -13,7 +14,6 @@ C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\Pro
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\amd64\vcruntime140_1.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\TraceReloggerLib.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Dia2Lib.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\OSExtensions.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\mongocrypt.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe.config
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ProjectArcadeGame.exe
@@ -162,7 +162,6 @@ C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\Pro
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\tr\Microsoft.VisualStudio.Services.WebApi.resources.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hans\Microsoft.VisualStudio.Services.WebApi.resources.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\zh-Hant\Microsoft.VisualStudio.Services.WebApi.resources.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\ProjectArcadeGame.csproj.AssemblyReference.cache
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameEndWindow.g.cs
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\GameWindow.g.cs
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\obj\Debug\Highscores.g.cs

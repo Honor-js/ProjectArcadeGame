@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
         Title="StartWindow" Height="450" Width="800">
-    <Grid Background="DeepSkyBlue">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Characters/startscreen.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -19,8 +22,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button Grid.Row="3" Grid.Column="2" 
-         Click="Back_Click">Back</Button>
+         Click="Back_Click" Background="Black" Foreground="White" Height="50" FontFamily="Gill Sans Ultra Bold" FontSize="20">Back</Button>
         <Button Grid.Row="2" Grid.Column="1"
-         Click="Start_Click">Start</Button>
+         Click="Start_Click" Background="#FFFFD477" Foreground="DodgerBlue" FontFamily="Gill Sans Ultra Bold" FontSize="20">Start</Button>
     </Grid>
 </Window>
