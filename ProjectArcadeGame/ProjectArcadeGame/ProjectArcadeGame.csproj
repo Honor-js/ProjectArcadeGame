@@ -378,6 +378,8 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Characters\luigi_left.png" />
+    <Resource Include="Characters\titlescreen.png" />
+    <Resource Include="Characters\startscreen.png" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
