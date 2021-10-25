@@ -27,6 +27,8 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkin = new ImageBrush();
         private ImageBrush Player2Skin = new ImageBrush();
         private ImageBrush GroundSkin = new ImageBrush();
+        private ImageBrush ObstacleSkin = new ImageBrush();
+        private ImageBrush FinishSkin = new ImageBrush();
         //private ImageBrush PlayerSkinLeft = new ImageBrush();
 
         int Speed = 8;
@@ -101,6 +103,17 @@ namespace ProjectArcadeGame
             Player2.Fill = Player2Skin;
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             Ground2.Fill = GroundSkin;
+
+            //Coin
+            ObstacleSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/coin.png"));
+            Coin1.Fill = ObstacleSkin;
+            Coin2.Fill = ObstacleSkin;
+
+            //Peach Checkpoint
+            FinishSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/peach.png"));
+            Peach1.Fill = FinishSkin;
+            Peach2.Fill = FinishSkin;
+
 
         }
         #region Game Logic
