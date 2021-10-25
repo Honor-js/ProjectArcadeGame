@@ -1,3 +1,9 @@
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.dll
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.Common.xml
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Protocol.xml
+C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Data.SqlClient.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\OSExtensions.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy32.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\snappy64.dll
@@ -25,7 +31,6 @@ C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\Pro
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.Framework.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Build.Utilities.Core.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.FastSerialization.dll
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.DotNet.Cli.Utils.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Extensions.DependencyModel.dll
@@ -78,11 +83,8 @@ C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\Pro
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Diagnostics.Tracing.TraceEvent.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Logging.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.IdentityModel.Tokens.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.TeamFoundation.Common.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.Common.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\Microsoft.VisualStudio.Services.WebApi.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Bson.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\MongoDB.Driver.xml
@@ -96,13 +98,11 @@ C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\Pro
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Packaging.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Packaging.Core.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.ProjectModel.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Protocol.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\NuGet.Versioning.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Common.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\ServiceStack.Text.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Buffers.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Collections.Immutable.xml
-C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Data.SqlClient.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Memory.xml
 C:\Users\hhbwr\OneDrive\Documents\GitHub\ProjectArcadeGame\ProjectArcadeGame\ProjectArcadeGame\bin\Debug\System.Net.Http.Formatting.xml

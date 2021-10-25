@@ -27,6 +27,8 @@ namespace ProjectArcadeGame
         private ImageBrush PlayerSkin = new ImageBrush();
         private ImageBrush Player2Skin = new ImageBrush();
         private ImageBrush GroundSkin = new ImageBrush();
+        private ImageBrush ObstacleSkin = new ImageBrush();
+        private ImageBrush FinishSkin = new ImageBrush();
         //private ImageBrush PlayerSkinLeft = new ImageBrush();
 
         int Speed = 8;
@@ -34,7 +36,7 @@ namespace ProjectArcadeGame
         private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
         int Force = 0;
         int JumpSpeed = 10;
-        private int time;
+        private int playerCounter = 0;
         int Highscore;
         
         /*Player2*/
@@ -102,6 +104,17 @@ namespace ProjectArcadeGame
             GroundSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario_ground1.png"));
             Ground2.Fill = GroundSkin;
 
+            //Coin
+            ObstacleSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/coin.png"));
+            Coin1.Fill = ObstacleSkin;
+            Coin2.Fill = ObstacleSkin;
+
+            //Peach Checkpoint
+            FinishSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/peach.png"));
+            Peach1.Fill = FinishSkin;
+            Peach2.Fill = FinishSkin;
+
+
         }
         #region Game Logic
         private void GameEngine(object sender, EventArgs press)
@@ -134,9 +147,9 @@ namespace ProjectArcadeGame
                     }
                 }
             }
-
-            //Player1
-            if (MoveLeft && LeftPos > 5)
+         
+                    //Player1
+                    if (MoveLeft && LeftPos > 5)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - Speed);
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_left.png"));
@@ -210,8 +223,18 @@ namespace ProjectArcadeGame
             }*/
             #endregion
         }
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            if (Tag == null)
+            {
+                playerCounter++;
+                Time.Content = Convert.ToString(playerCounter);
+            }
+        }
         #endregion
+        #region Obstacle Logic
 
+        #endregion
         #region Button Logic
         private void MainMenu_Click(object sender, RoutedEventArgs e)
         {
