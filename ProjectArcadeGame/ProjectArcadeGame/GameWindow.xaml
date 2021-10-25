@@ -49,7 +49,26 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
-            <Label Content="Time" HorizontalAlignment="Left"/>
+            <Label Name="Time" Content="Time" HorizontalAlignment="Left"/>
+            <!--#endregion-->
+            <!--#region Obstacle1-->
+            <Rectangle
+            x:Name="Coin2"
+            Tag="Coin2"
+            Fill="Yellow"
+            Width="50"
+            Height="50"
+            Canvas.Left="400"/>
+            <!--#endregion-->
+            <!--#region Peach1-->
+            <Rectangle
+            x:Name="Peach1"
+            Tag="Peach1"
+            Fill="DeepPink"
+            Height="75"
+            Width="75"
+            Canvas.Left="1400"
+            Canvas.Top="296"/>
             <!--#endregion-->
         </Canvas>
         <Canvas x:Name="GameCanvas2" FocusManager.IsFocusScope="True" Background="White" Grid.Row="1">
@@ -80,6 +99,28 @@
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
             <Label Content="Time" HorizontalAlignment="Left"/>
+            <!--#endregion-->
+            <!--#region Obstacle2-->
+            <Rectangle
+            x:Name="Coin1"
+            Tag="Coin"
+            Fill="Yellow"
+            Width="50"
+            Height="50"
+            Canvas.Left="400"/>
+            <!--#endregion-->
+            <!--#region Finish2-->
+            <Rectangle
+            x:Name="Peach2"
+            Tag="Peach"
+            Fill="DeepPink"
+            Height="75"
+            Width="75"
+            Canvas.Left="1400"
+            Canvas.Top="296"/>
+
+            
+            
             <!--#endregion-->
         </Canvas>
     </Grid>
