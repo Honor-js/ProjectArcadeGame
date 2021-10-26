@@ -144,26 +144,6 @@ namespace ProjectArcadeGame
             double Peach_2 = Canvas.GetLeft(Peach2);
             double PipeL_1 = Canvas.GetLeft(PipeL1);
 
-            /*foreach (var x in GameCanvas.Children.OfType<Rectangle>())
-            {
-                if (x.Tag != null)
-                {
-                    var Tag = (string)x.Tag;
-                    if (Tag == "Platform")
-                    {
-                        Rect PlayerHitBox = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), Player.Width, Player.Height);
-                        Rect PlatformHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
-                        
-                        if (PlayerHitBox.IntersectsWith(PlatformHitBox))
-                        {
-                            Force = 10;
-                            JumpSpeed = 10;
-                            //Jumping = false;
-                        }
-                    }
-                }
-            }*/
-
             //Player1
             if (P1Victory == false)
             {
@@ -180,6 +160,7 @@ namespace ProjectArcadeGame
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
                 Player.Fill = PlayerSkin;
             }
+
             //Jump
             if (MoveUp == true && JumpSpeed > 0/* && Force == 10*/)
             {
@@ -224,6 +205,7 @@ namespace ProjectArcadeGame
                     Player2.Fill = Player2Skin;
 
                 }
+
                 //Jump
                 if (MoveUp2 == true && JumpSpeed2 > 0/* && Force == 10*/)
                 {
@@ -249,6 +231,16 @@ namespace ProjectArcadeGame
             if (LeftPos2 >= Peach_2)
             {
                 P2Victory = true;
+            }
+
+            if (P1Victory == true)
+            {
+                TimerPlayer1.Stop();
+            }
+
+            if (P2Victory == true)
+            {
+                TimerPlayer2.Stop();
             }
             #endregion
 
@@ -295,7 +287,6 @@ namespace ProjectArcadeGame
             #endregion
         }
 
-        //todo timer afmaken
         #region timers
         int count1 = 0;
         int count2 = 0;
