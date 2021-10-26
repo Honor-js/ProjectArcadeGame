@@ -17,10 +17,35 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="3" Grid.Column="2" 
+        <Button Grid.Row="3" Grid.Column="4" 
          Click="Back_Click">Back</Button>
-        <Button Grid.Row="2" Grid.Column="1"
+        <Button Grid.Row="2" Grid.Column="2"
          Click="Start_Click">Start</Button>
+        <TextBlock Grid.Row="0" 
+                   Grid.Column="1">
+            Speler 1
+        </TextBlock>
+        <TextBlock Grid.Row="0" 
+                   Grid.Column="3">
+            Speler 2
+        </TextBlock>
+        <TextBox MaxLength="10" 
+                 Grid.Row="1" 
+                 Grid.Column="1"
+                 Background="Black" 
+                 Foreground="White"
+                 x:Name="Name1">
+        </TextBox>
+        <TextBox MaxLength="10" 
+                 Grid.Row="1" 
+                 Grid.Column="3"
+                 Background="Black" 
+                 Foreground="White"
+                 x:Name="Name2">
+            
+        </TextBox>
     </Grid>
 </Window>
