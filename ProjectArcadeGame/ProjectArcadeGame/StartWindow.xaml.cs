@@ -22,7 +22,6 @@ namespace ProjectArcadeGame
         public StartWindow()
         {
             InitializeComponent();
-
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -36,7 +35,10 @@ namespace ProjectArcadeGame
         {
             GameWindow gameWindow = new GameWindow();
             gameWindow.Visibility = Visibility.Visible;
+            string Player_Name1 = Name1.Text;
+            string Player_Name2 = Name2.Text;
             this.Close();
         }
+
     }
 }
