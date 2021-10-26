@@ -44,7 +44,8 @@ namespace ProjectArcadeGame
         int Force2 = 10;
         int JumpSpeed2 = 10;
         private DispatcherTimer GameTimer = new DispatcherTimer();
-
+        private DispatcherTimer TimerPlayer1 = new DispatcherTimer();
+        private DispatcherTimer TimerPlayer2 = new DispatcherTimer();
         #region KeyEvents
         private void KeyPress(object sender, KeyEventArgs press)
         {
@@ -91,6 +92,13 @@ namespace ProjectArcadeGame
             GameTimer.Start();
 
             GameCanvas.Focus();
+
+            TimerPlayer1.Interval = TimeSpan.FromSeconds(1);
+            TimerPlayer1.Tick += Timer1;
+            TimerPlayer2.Interval = TimeSpan.FromSeconds(1);
+            TimerPlayer2.Tick += Timer2;
+            TimerPlayer1.Start();
+            TimerPlayer2.Start();
 
             //Player1
             PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
@@ -222,7 +230,22 @@ namespace ProjectArcadeGame
             }*/
             #endregion
         }
-        //#endregion
+
+        //todo timer afmaken
+        #region timers
+        int count1 = 0;
+        int count2 = 0;
+        private void Timer1 (object sender, EventArgs e)
+        {
+            count1++;
+            Time1.Content = string.Format("{0}:{1}", count1 / 60, count1 % 60);
+        }
+        private void Timer2(object sender, EventArgs e)
+        {
+            count2++;
+            Time2.Content = string.Format("{0}:{1}", count2 / 60, count2 % 60);
+        }
+        #endregion timers
 
         #region Button Logic
         private void MainMenu_Click(object sender, RoutedEventArgs e)
@@ -247,6 +270,7 @@ namespace ProjectArcadeGame
             //todo Reset timer Player2
         }
         #endregion
+
         #region Database
         private void AddHighscoreToDatabase(int Highscore) //Database = Microsoft SQL Express
         {

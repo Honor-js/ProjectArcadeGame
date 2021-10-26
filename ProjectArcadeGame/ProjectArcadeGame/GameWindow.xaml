@@ -49,7 +49,7 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
-            <Label Name="Time" Content="Time" HorizontalAlignment="Left"/>
+            <Label x:Name="Time1" Content="" HorizontalAlignment="Left"/>
             <!--#endregion-->
             <!--#region Obstacle1-->
             <Rectangle
@@ -71,6 +71,8 @@
             Canvas.Top="296"/>
             <!--#endregion-->
         </Canvas>
+        
+        
         <Canvas x:Name="GameCanvas2" FocusManager.IsFocusScope="True" Background="White" Grid.Row="1">
             <!--#region Player2-->
             <Rectangle
@@ -98,7 +100,7 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
-            <Label Content="Time" HorizontalAlignment="Left"/>
+            <Label x:Name="Time2" Content="" HorizontalAlignment="Left"/>
             <!--#endregion-->
             <!--#region Obstacle2-->
             <Rectangle
