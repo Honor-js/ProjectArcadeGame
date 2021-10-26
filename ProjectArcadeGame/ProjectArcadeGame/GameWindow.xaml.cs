@@ -126,9 +126,10 @@ namespace ProjectArcadeGame
 
 
         }
-        #region Game Logic
+        
         private void GameEngine(object sender, EventArgs press)
         {
+            #region Game Logic
             //Player1
             double CurrentTop = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
@@ -249,7 +250,7 @@ namespace ProjectArcadeGame
             {
                 P2Victory = true;
             }
-
+            #endregion
 
             #region Obstacle Logic
             //Player1
@@ -360,8 +361,6 @@ namespace ProjectArcadeGame
             }
         }
         #endregion
+        
     }
 }
-
-
-
