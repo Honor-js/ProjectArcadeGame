@@ -33,16 +33,18 @@ namespace ProjectArcadeGame
 
         int Speed = 8;
         /*Player1*/
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false/*, Jumping = false*/;      
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, P1Victory = false;      
         int Force = 10;
         int JumpSpeed = 10;
+        int BaseTop = 296;
         private int time;
         int Highscore;
         
         /*Player2*/
-        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, Jumping2 = false;
+        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, P2Victory = false;
         int Force2 = 10;
         int JumpSpeed2 = 10;
+        int BaseTop2 = 296;
         private DispatcherTimer GameTimer = new DispatcherTimer();
         private DispatcherTimer TimerPlayer1 = new DispatcherTimer();
         private DispatcherTimer TimerPlayer2 = new DispatcherTimer();
@@ -128,13 +130,18 @@ namespace ProjectArcadeGame
         private void GameEngine(object sender, EventArgs press)
         {
             //Player1
-            double LastTop = 0;
             double CurrentTop = Canvas.GetTop(Player);
             double LeftPos = Canvas.GetLeft(Player);
-            double BaseTop = 296;
+            double GoombaM_1 = Canvas.GetLeft(GoombaM1);
+            double Peach_1 = Canvas.GetLeft(Peach1);
+            double PipeM_1 = Canvas.GetLeft(PipeM1);
 
             //Player2
+            double CurrentTop2 = Canvas.GetTop(Player2);
             double LeftPos2 = Canvas.GetLeft(Player2);
+            double GoombaL_1 = Canvas.GetLeft(GoombaL1);
+            double Peach_2 = Canvas.GetLeft(Peach2);
+            double PipeL_1 = Canvas.GetLeft(PipeL1);
 
             /*foreach (var x in GameCanvas.Children.OfType<Rectangle>())
             {
@@ -157,6 +164,8 @@ namespace ProjectArcadeGame
             }*/
 
             //Player1
+            if (P1Victory == false)
+            {
             if (MoveLeft && LeftPos > 5)
             {
                 Canvas.SetLeft(Player, Canvas.GetLeft(Player) - Speed);
@@ -170,7 +179,7 @@ namespace ProjectArcadeGame
                 PlayerSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/mario.png"));
                 Player.Fill = PlayerSkin;
             }
-
+            //Jump
             if (MoveUp == true && JumpSpeed > 0/* && Force == 10*/)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
@@ -184,50 +193,104 @@ namespace ProjectArcadeGame
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
                 //JumpSpeed += 1;
                 Force += 1;
-                if (Force > 10)
+                if (Force > 10 || CurrentTop >= BaseTop)
                 {
                     JumpSpeed = 10;
                     Force = 10;
                     MoveUp = false;
                 }
             }
-
-            
-            LastTop = CurrentTop;
-
-            /*//Player2
-            if (MoveLeft2 && LeftPos2 > 5)
+            }
+            if (LeftPos >= Peach_1)
             {
-                Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) - Speed);
-                Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi_left.png"));
-                Player2.Fill = Player2Skin;
+                P1Victory = true;
             }
 
-            if (MoveRight2)
+            //Player2
+            if (P2Victory == false)
             {
-                Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) + Speed);
-                Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi.png"));
-                Player2.Fill = Player2Skin;
+                if (MoveLeft2 && LeftPos2 > 5)
+                {
+                    Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) - Speed);
+                    Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi_left.png"));
+                    Player2.Fill = Player2Skin;
+                }
 
+                if (MoveRight2)
+                {
+                    Canvas.SetLeft(Player2, Canvas.GetLeft(Player2) + Speed);
+                    Player2Skin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/luigi.png"));
+                    Player2.Fill = Player2Skin;
+
+                }
+                //Jump
+                if (MoveUp2 == true && JumpSpeed2 > 0/* && Force == 10*/)
+                {
+                    Canvas.SetTop(Player2, Canvas.GetTop(Player2) - JumpSpeed2);
+                    JumpSpeed2 -= 1;
+                    Force2 -= 1;
+                }
+
+                if (MoveUp2 == true && JumpSpeed2 == 0 && Force2 <= 10)
+                {
+                    //Jumping = true;
+                    Canvas.SetTop(Player2, Canvas.GetTop(Player2) + Force2);
+                    //JumpSpeed += 1;
+                    Force2 += 1;
+                    if (Force2 > 10 || CurrentTop2 >= BaseTop2)
+                    {
+                        JumpSpeed2 = 10;
+                        Force2 = 10;
+                        MoveUp2 = false;
+                    }
+                }
+            }
+            if (LeftPos2 >= Peach_2)
+            {
+                P2Victory = true;
             }
 
-            #region Reset Logic
-            /*Player1
-            if ((LeftPos >= 50 && LeftPos <= 60 && TopPos > 295))
+
+            #region Obstacle Logic
+            //Player1
+            if ((LeftPos >= GoombaM_1 - 75 && LeftPos <= GoombaM_1 + 50 && MoveUp == false) //Goomba 1
+                )
             {
                 Canvas.SetLeft(Player, 10);
                 Canvas.SetTop(Player, 296);
                 JumpSpeed = 10;
                 Force = 10;
-            }/*
+                MoveUp = false;
+            }
+            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
+            {
+                BaseTop = 221;
+            }
+            else if (MoveUp == false)
+            {
+                BaseTop = 296;
+                Canvas.SetTop(Player, 296);
+            }
+
             //Player2
-            if (LeftPos2 >= 50 && LeftPos2 <= 60)
+            if ((LeftPos2 >= GoombaL_1 - 75 && LeftPos2 <= GoombaL_1 + 50 && MoveUp2 == false) //Goomba 1
+                )
             {
                 Canvas.SetLeft(Player2, 10);
                 Canvas.SetTop(Player2, 296);
                 JumpSpeed2 = 10;
                 Force2 = 10;
-            }*/
+                MoveUp2 = false;
+            }
+            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
+            {
+                BaseTop2 = 221;
+            }
+            else if (MoveUp2 == false)
+            {
+                BaseTop2 = 296;
+                Canvas.SetTop(Player2, 296);
+            }
             #endregion
         }
 
@@ -261,12 +324,14 @@ namespace ProjectArcadeGame
             Canvas.SetTop(Player, 296);
             JumpSpeed = 10;
             Force = 0;
+            MoveUp = false;
             //todo Reset timer Player1
             //Player2
             Canvas.SetLeft(Player2, 10);
             Canvas.SetTop(Player2, 296);
             JumpSpeed2 = 10;
             Force2 = 10;
+            MoveUp2 = false;
             //todo Reset timer Player2
         }
         #endregion

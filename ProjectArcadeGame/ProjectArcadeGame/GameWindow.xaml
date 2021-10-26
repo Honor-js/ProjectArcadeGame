@@ -59,8 +59,23 @@
             Width="50"
             Height="50"
             Canvas.Left="400"/>
-            <!--#endregion-->
-            <!--#region Peach1-->
+            <!--Goomba 1-->
+            <Rectangle
+             x:Name="GoombaM1"
+             Fill="Brown"
+             Width="50"
+             Height="50"
+             Canvas.Left="200"
+             Canvas.Top="296"/>
+            <!--Pipe 1-->
+            <Rectangle
+             x:Name="PipeM1"
+             Fill="LightGreen"
+             Width="50"
+             Height="75"
+             Canvas.Left="600"
+             Canvas.Top="296"/>
+            <!--Peach1-->
             <Rectangle
             x:Name="Peach1"
             Tag="Peach1"
@@ -110,8 +125,23 @@
             Width="50"
             Height="50"
             Canvas.Left="400"/>
-            <!--#endregion-->
-            <!--#region Finish2-->
+            <!--Goomba 1-->
+            <Rectangle
+             x:Name="GoombaL1"
+             Fill="Brown"
+             Width="50"
+             Height="50"
+             Canvas.Left="200"
+             Canvas.Top="296"/>
+            <!--Pipe 1-->
+            <Rectangle
+             x:Name="PipeL1"
+             Fill="LightGreen"
+             Width="50"
+             Height="75"
+             Canvas.Left="600"
+             Canvas.Top="296"/>
+            <!--Peach2-->
             <Rectangle
             x:Name="Peach2"
             Tag="Peach"
@@ -120,9 +150,6 @@
             Width="75"
             Canvas.Left="1400"
             Canvas.Top="296"/>
-
-            
-            
             <!--#endregion-->
         </Canvas>
     </Grid>
