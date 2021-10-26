@@ -38,7 +38,7 @@
             Height="50"
             Width="2000"
             HorizontalAlignment="Stretch"
-            Canvas.Top="371"
+            Canvas.Top="365"
             Canvas.Left="0"/>
         <Rectangle 
             x:Name="UnderGround"

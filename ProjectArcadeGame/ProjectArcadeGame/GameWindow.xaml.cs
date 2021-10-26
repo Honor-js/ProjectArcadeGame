@@ -24,11 +24,13 @@ namespace ProjectArcadeGame
     /// </summary>
     public partial class GameWindow : Window
     {
-        private ImageBrush PlayerSkin = new ImageBrush();
-        private ImageBrush Player2Skin = new ImageBrush();
-        private ImageBrush GroundSkin = new ImageBrush();
-        private ImageBrush ObstacleSkin = new ImageBrush();
-        private ImageBrush FinishSkin = new ImageBrush();
+        private ImageBrush PlayerSkin = new ImageBrush(); //Mario 
+        private ImageBrush Player2Skin = new ImageBrush(); //Luigi
+        private ImageBrush GroundSkin = new ImageBrush(); //Ground
+        private ImageBrush ObstacleSkin = new ImageBrush(); //Coin
+        private ImageBrush PipeSkin = new ImageBrush(); //Pipe
+        private ImageBrush GoombaSkin = new ImageBrush(); // Goomba, 1st obstacle
+        private ImageBrush FinishSkin = new ImageBrush(); //Peach
         //private ImageBrush PlayerSkinLeft = new ImageBrush();
 
         int Speed = 8;
@@ -116,7 +118,14 @@ namespace ProjectArcadeGame
             Peach1.Fill = FinishSkin;
             Peach2.Fill = FinishSkin;
 
-
+            //Pipe
+            PipeSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/pipe.png"));
+            PipeM1.Fill = PipeSkin;
+            PipeL1.Fill = PipeSkin;
+            //Goomba 
+            GoombaSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/goomba.png"));
+            GoombaM1.Fill = GoombaSkin;
+            GoombaL1.Fill = GoombaSkin;
         }
         #region Game Logic
         private void GameEngine(object sender, EventArgs press)
