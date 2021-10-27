@@ -40,6 +40,7 @@ namespace ProjectArcadeGame
         int JumpSpeed = 10;
         int BaseTop = 296;
         private int time;
+        string Name1 = StartWindow.PlayerName1;
         
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, P2Victory = false;
@@ -48,6 +49,7 @@ namespace ProjectArcadeGame
         int BaseTop2 = 296;
         private DispatcherTimer GameTimer = new DispatcherTimer();
         private DispatcherTimer TimerPlayer1 = new DispatcherTimer();
+        //int TimerPlayer1 = 1337;
         private DispatcherTimer TimerPlayer2 = new DispatcherTimer();
         #region KeyEvents
         private void KeyPress(object sender, KeyEventArgs press)
@@ -129,6 +131,7 @@ namespace ProjectArcadeGame
             PipeSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/pipe.png"));
             PipeM1.Fill = PipeSkin;
             PipeL1.Fill = PipeSkin;
+            
             //Goomba 
             GoombaSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/goomba.png"));
             GoombaM1.Fill = GoombaSkin;
@@ -244,11 +247,17 @@ namespace ProjectArcadeGame
             if (P1Victory == true)
             {
                 TimerPlayer1.Stop();
+                AddHighscoreToDatabase(count1, Name1);
+                MessageBox.Show("You have completed the level in a time of  " + count1 + " seconds!" +" Game over!");
+                Close();
             }
 
             if (P2Victory == true)
             {
                 TimerPlayer2.Stop();
+                //AddHighscoreToDatabase(count2);
+                MessageBox.Show("You have completed the level in a time of  " + count2 + " seconds!" + " Game over!");
+                Close();
             }
             #endregion
 
@@ -309,12 +318,6 @@ namespace ProjectArcadeGame
             Time2.Content = string.Format("{0}:{1}", count2 / 60, count2 % 60);
         }
         #endregion timers
-        private void saveHighscore(object sender, EventArgs e)
-        {
-            int finaltime1 = count1;
-            int finaltime2 = count2;
-
-        }
 
         #region Button Logic
         private void MainMenu_Click(object sender, RoutedEventArgs e)
@@ -343,28 +346,31 @@ namespace ProjectArcadeGame
         #endregion
 
         #region Database
-        private void AddHighscoreToDatabase(int count1) //Database = Microsoft SQL Express
-        {
-            string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
-            string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Date]) VALUES ('" +
-             count1 + "','Name','" + DateTime.Today + "')";
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlCommand command = new SqlCommand();
-            try
+        private void AddHighscoreToDatabase(int highscore, string name) //Database = Microsoft SQL Express
+        
             {
-                command.CommandText = query;
-                command.CommandType = CommandType.Text;
-                command.Connection = connection;
+                string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
+                string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win/Lose], [Date]) VALUES ('" +
+                highscore + "','"+ name + "','Win','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
+                SqlConnection connection = new SqlConnection(connectionString);
+                SqlCommand command = new SqlCommand();
+                try
+                {
+                    command.CommandText = query;
+                    command.CommandType = CommandType.Text;
+                    command.Connection = connection;
 
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                
+                }
             }
-            catch (Exception)
-            {
-                connection.Close();
-            }
-        }
+        
         #endregion
         
     }
