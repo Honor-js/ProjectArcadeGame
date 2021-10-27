@@ -65,7 +65,7 @@
              Fill="Brown"
              Width="50"
              Height="50"
-             Canvas.Left="200"
+             Canvas.Left="300"
              Canvas.Top="296"/>
             <!--Pipe 1-->
             <Rectangle
@@ -73,8 +73,16 @@
              Fill="LightGreen"
              Width="50"
              Height="75"
-             Canvas.Left="600"
+             Canvas.Left="1000"
              Canvas.Top="296"/>
+            <!--Platform-->
+            <Rectangle
+             x:Name="PlatformM"
+             Fill="Green"
+             Width="500"
+             Height="50"
+             Canvas.Left="1100"
+             Canvas.Top="250"/>
             <!--Peach1-->
             <Rectangle
             x:Name="Peach1"
@@ -131,7 +139,7 @@
              Fill="Brown"
              Width="50"
              Height="50"
-             Canvas.Left="200"
+             Canvas.Left="300"
              Canvas.Top="296"/>
             <!--Pipe 1-->
             <Rectangle
@@ -139,8 +147,16 @@
              Fill="LightGreen"
              Width="50"
              Height="75"
-             Canvas.Left="600"
+             Canvas.Left="1000"
              Canvas.Top="296"/>
+            <!--Platform-->
+            <Rectangle
+             x:Name="PlatformL"
+             Fill="Green"
+             Width="500"
+             Height="50"
+             Canvas.Left="1100"
+             Canvas.Top="250"/>
             <!--Peach2-->
             <Rectangle
             x:Name="Peach2"

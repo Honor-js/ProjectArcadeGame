@@ -36,16 +36,16 @@ namespace ProjectArcadeGame
         int Speed = 8;
         /*Player1*/
         private bool MoveLeft = false, MoveRight = false, MoveUp = false, P1Victory = false;      
-        int Force = 10;
-        int JumpSpeed = 10;
+        int Force = 11;
+        int JumpSpeed = 11;
         int BaseTop = 296;
         private int time;
         int Highscore;
         
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, P2Victory = false;
-        int Force2 = 10;
-        int JumpSpeed2 = 10;
+        int Force2 = 11;
+        int JumpSpeed2 = 11;
         int BaseTop2 = 296;
         private DispatcherTimer GameTimer = new DispatcherTimer();
         private DispatcherTimer TimerPlayer1 = new DispatcherTimer();
@@ -145,6 +145,7 @@ namespace ProjectArcadeGame
             double GoombaM_1 = Canvas.GetLeft(GoombaM1);
             double Peach_1 = Canvas.GetLeft(Peach1);
             double PipeM_1 = Canvas.GetLeft(PipeM1);
+            double Platform_M = Canvas.GetLeft(PlatformM);
 
             //Player2
             double CurrentTop2 = Canvas.GetTop(Player2);
@@ -178,16 +179,16 @@ namespace ProjectArcadeGame
                 Force -= 1;
             }
 
-            if (MoveUp == true && JumpSpeed == 0 && Force <= 10)
+            if (MoveUp == true && JumpSpeed == 0 && Force <= 11)
             {
                 //Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
                 //JumpSpeed += 1;
                 Force += 1;
-                if (Force > 10 || CurrentTop >= BaseTop)
+                if (Force > 11 || CurrentTop >= BaseTop)
                 {
-                    JumpSpeed = 10;
-                    Force = 10;
+                    JumpSpeed = 11;
+                    Force = 11;
                     MoveUp = false;
                 }
             }
@@ -223,13 +224,13 @@ namespace ProjectArcadeGame
                     Force2 -= 1;
                 }
 
-                if (MoveUp2 == true && JumpSpeed2 == 0 && Force2 <= 10)
+                if (MoveUp2 == true && JumpSpeed2 == 0 && Force2 <= 11)
                 {
                     //Jumping = true;
                     Canvas.SetTop(Player2, Canvas.GetTop(Player2) + Force2);
                     //JumpSpeed += 1;
                     Force2 += 1;
-                    if (Force2 > 10 || CurrentTop2 >= BaseTop2)
+                    if (Force2 > 11 || CurrentTop2 >= BaseTop2)
                     {
                         JumpSpeed2 = 10;
                         Force2 = 10;
@@ -255,43 +256,74 @@ namespace ProjectArcadeGame
 
             #region Obstacle Logic
             //Player1
+            //Goomba's
             if ((LeftPos >= GoombaM_1 - 75 && LeftPos <= GoombaM_1 + 50 && MoveUp == false) //Goomba 1
                 )
             {
                 Canvas.SetLeft(Player, 10);
                 Canvas.SetTop(Player, 296);
-                JumpSpeed = 10;
-                Force = 10;
+                JumpSpeed = 11;
+                Force = 11;
+                BaseTop = 296;
                 MoveUp = false;
             }
+            //Pipe
             if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
             {
                 BaseTop = 221;
             }
-            else if (MoveUp == false)
+            if //(LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 - 65 && MoveUp == false)
+               (LeftPos <= PipeM_1 - 75 && BaseTop == 221)
+            {
+                BaseTop = 296;
+                Canvas.SetTop(Player, 296);
+            }
+            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 - 67  && CurrentTop >= 250 /*Collision left*/)
+            {
+                Canvas.SetLeft(Player, PipeM_1 - 80);
+            }
+            //Platform
+            if (LeftPos >= Platform_M)
+            {
+                BaseTop = 150;
+            }
+            if (LeftPos <= Platform_M - 75 && BaseTop == 150)
             {
                 BaseTop = 296;
                 Canvas.SetTop(Player, 296);
             }
 
             //Player2
+            //Goomba's
             if ((LeftPos2 >= GoombaL_1 - 75 && LeftPos2 <= GoombaL_1 + 50 && MoveUp2 == false) //Goomba 1
                 )
             {
                 Canvas.SetLeft(Player2, 10);
                 Canvas.SetTop(Player2, 296);
-                JumpSpeed2 = 10;
-                Force2 = 10;
+                JumpSpeed2 = 11;
+                Force2 = 11;
+                BaseTop2 = 296;
                 MoveUp2 = false;
             }
-            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
+            //Pipe
+            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
             {
-                BaseTop2 = 221;
+                BaseTop = 221;
             }
-            else if (MoveUp2 == false)
+            if //(LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 - 65 && MoveUp == false)
+               (LeftPos <= PipeM_1 - 75 && BaseTop == 221)
             {
-                BaseTop2 = 296;
-                Canvas.SetTop(Player2, 296);
+                BaseTop = 296;
+                Canvas.SetTop(Player, 296);
+            }
+            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 - 67 && CurrentTop >= 250 /*Collision left*/)
+            {
+                Canvas.SetLeft(Player, PipeM_1 - 80);
+            }
+            //Platform
+            if (LeftPos >= Platform_M - 75)
+            {
+                BaseTop = 150;
             }
             #endregion
         }
@@ -323,17 +355,21 @@ namespace ProjectArcadeGame
             //Player1
             Canvas.SetLeft(Player, 10);
             Canvas.SetTop(Player, 296);
-            JumpSpeed = 10;
-            Force = 0;
+            JumpSpeed = 11;
+            Force = 11;
+            BaseTop = 296;
             MoveUp = false;
-            //todo Reset timer Player1
+            P1Victory = false;
+            count1 = 0;
             //Player2
             Canvas.SetLeft(Player2, 10);
             Canvas.SetTop(Player2, 296);
-            JumpSpeed2 = 10;
-            Force2 = 10;
+            JumpSpeed2 = 11;
+            Force2 = 11;
+            BaseTop2 = 296;
             MoveUp2 = false;
-            //todo Reset timer Player2
+            P2Victory = false;
+            count2 = 0;
         }
         #endregion
 
