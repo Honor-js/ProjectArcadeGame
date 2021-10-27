@@ -35,21 +35,25 @@ namespace ProjectArcadeGame
 
         int Speed = 8;
         /*Player1*/
-        private bool MoveLeft = false, MoveRight = false, MoveUp = false, P1Victory = false;      
+        private bool MoveLeft = false, MoveRight = false, MoveUp = false, P1Finish = false;      
         int Force = 10;
         int JumpSpeed = 10;
         int BaseTop = 296;
         private int time;
         string Name1 = StartWindow.PlayerName1;
+        string WL1;
         
         /*Player2*/
-        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, P2Victory = false;
+        private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, P2Finish = false;
         int Force2 = 10;
         int JumpSpeed2 = 10;
         int BaseTop2 = 296;
+        string Name2 = StartWindow.PlayerName2;
+        string WL2;
+
+        //Timers
         private DispatcherTimer GameTimer = new DispatcherTimer();
         private DispatcherTimer TimerPlayer1 = new DispatcherTimer();
-        //int TimerPlayer1 = 1337;
         private DispatcherTimer TimerPlayer2 = new DispatcherTimer();
         #region KeyEvents
         private void KeyPress(object sender, KeyEventArgs press)
@@ -156,7 +160,7 @@ namespace ProjectArcadeGame
             double PipeL_1 = Canvas.GetLeft(PipeL1);
 
             //Player1
-            if (P1Victory == false)
+            if (P1Finish == false) // Player 1 not reached Peach
             {
             if (MoveLeft && LeftPos > 5)
             {
@@ -196,11 +200,13 @@ namespace ProjectArcadeGame
             }
             if (LeftPos >= Peach_1)
             {
-                P1Victory = true;
+                P1Finish = true;
+                TimerPlayer1.Stop();
+
             }
 
             //Player2
-            if (P2Victory == false)
+            if (P2Finish == false) // Player 2 not reached Peach
             {
                 if (MoveLeft2 && LeftPos2 > 5)
                 {
@@ -241,25 +247,35 @@ namespace ProjectArcadeGame
             }
             if (LeftPos2 >= Peach_2)
             {
-                P2Victory = true;
-            }
-
-            if (P1Victory == true)
-            {
-                TimerPlayer1.Stop();
-                AddHighscoreToDatabase(count1, Name1);
-                MessageBox.Show("You have completed the level in a time of  " + count1 + " seconds!" +" Game over!");
-                Close();
-            }
-
-            if (P2Victory == true)
-            {
+                P2Finish = true;
                 TimerPlayer2.Stop();
-                //AddHighscoreToDatabase(count2);
-                MessageBox.Show("You have completed the level in a time of  " + count2 + " seconds!" + " Game over!");
-                Close();
+               
+            }
+            #region Victory Conditions
+            if (P1Finish == true && P2Finish == true) // Calculates the quickest time
+            {
+                if (count1 < count2)
+                {
+                    WL1 = "Win";
+                    WL2 = "Lose";
+                    AddHighscoreToDatabase(count1, Name1,WL1);
+                    AddHighscoreToDatabase(count2, Name2,WL2);
+                    MessageBox.Show("Player 1 wins!");
+                    Close();
+                }
+                else
+                {
+                    WL1 = "Lose";
+                    WL2 = "Win";
+                    AddHighscoreToDatabase(count1, Name1,WL1);
+                    AddHighscoreToDatabase(count2, Name2,WL2);
+                    MessageBox.Show("Player 2 wins!");
+                    Close();
+                }
+                #endregion
             }
             #endregion
+
 
             #region Obstacle Logic
             //Player1
@@ -346,12 +362,12 @@ namespace ProjectArcadeGame
         #endregion
 
         #region Database
-        private void AddHighscoreToDatabase(int highscore, string name) //Database = Microsoft SQL Express
+        private void AddHighscoreToDatabase(int highscore, string name, string WL) //Database = Microsoft SQL Express
         
             {
                 string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
                 string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win/Lose], [Date]) VALUES ('" +
-                highscore + "','"+ name + "','Win','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
+                highscore + "','"+ name + "','"+WL+"','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand();
                 try
