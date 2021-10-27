@@ -40,7 +40,6 @@ namespace ProjectArcadeGame
         int JumpSpeed = 10;
         int BaseTop = 296;
         private int time;
-        int Highscore;
         
         /*Player2*/
         private bool MoveLeft2 = false, MoveRight2 = false, MoveUp2 = false, P2Victory = false;
@@ -310,6 +309,12 @@ namespace ProjectArcadeGame
             Time2.Content = string.Format("{0}:{1}", count2 / 60, count2 % 60);
         }
         #endregion timers
+        private void saveHighscore(object sender, EventArgs e)
+        {
+            int finaltime1 = count1;
+            int finaltime2 = count2;
+
+        }
 
         #region Button Logic
         private void MainMenu_Click(object sender, RoutedEventArgs e)
@@ -338,11 +343,11 @@ namespace ProjectArcadeGame
         #endregion
 
         #region Database
-        private void AddHighscoreToDatabase(int Highscore) //Database = Microsoft SQL Express
+        private void AddHighscoreToDatabase(int count1) //Database = Microsoft SQL Express
         {
             string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
             string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Date]) VALUES ('" +
-             Highscore + "','Name','" + DateTime.Today + "')";
+             count1 + "','Name','" + DateTime.Today + "')";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand();
             try
