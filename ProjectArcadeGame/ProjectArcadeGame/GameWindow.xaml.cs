@@ -31,6 +31,7 @@ namespace ProjectArcadeGame
         private ImageBrush PipeSkin = new ImageBrush(); //Pipe
         private ImageBrush GoombaSkin = new ImageBrush(); // Goomba, 1st obstacle
         private ImageBrush FinishSkin = new ImageBrush(); //Peach
+        private ImageBrush LavaSkin = new ImageBrush(); //Lava
         //private ImageBrush PlayerSkinLeft = new ImageBrush();
 
         int Speed = 8;
@@ -145,6 +146,15 @@ namespace ProjectArcadeGame
             GoombaL1.Fill = GoombaSkin;
             GoombaL2.Fill = GoombaSkin;
             GoombaL3.Fill = GoombaSkin;
+
+            //Lava
+            LavaSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_Lava.png"));
+            LavaM.Fill = LavaSkin;
+            LavaL.Fill = LavaSkin;
+
+            // Platform
+            PlatformM.Fill = GroundSkin;
+            PlatformL.Fill = GroundSkin;
         }
         
         private void GameEngine(object sender, EventArgs press)

@@ -384,6 +384,7 @@
     <Resource Include="Characters\peach.png" />
     <Resource Include="Characters\Pipe.png" />
     <Resource Include="Characters\goomba.png" />
+    <Resource Include="Characters\Mario_Lava.png" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
