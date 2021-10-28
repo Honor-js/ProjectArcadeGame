@@ -75,7 +75,7 @@
             Fill="Yellow"
             Width="50"
             Height="50"
-            Canvas.Left="935"
+            Canvas.Left="920"
             Canvas.Top="296"/>
             <!--Goomba-->
             <Rectangle
@@ -90,7 +90,7 @@
              Fill="Brown"
              Width="50"
              Height="50"
-             Canvas.Left="850"
+             Canvas.Left="800"
              Canvas.Top="296"/>
             <Rectangle
              x:Name="GoombaM3"
@@ -173,14 +173,15 @@
             Fill="Yellow"
             Width="50"
             Height="50"
-            Canvas.Left="400"/>
+            Canvas.Left="355"
+            Canvas.Top="296"/>
             <Rectangle
             x:Name="Coin_L2"
             Tag="Coin2"
             Fill="Yellow"
             Width="50"
             Height="50"
-            Canvas.Left="935"
+            Canvas.Left="920"
             Canvas.Top="296"/>
             <!--Goomba 1-->
             <Rectangle
@@ -195,7 +196,7 @@
              Fill="Brown"
              Width="50"
              Height="50"
-             Canvas.Left="850"
+             Canvas.Left="800"
              Canvas.Top="296"/>
             <Rectangle
              x:Name="GoombaL3"
