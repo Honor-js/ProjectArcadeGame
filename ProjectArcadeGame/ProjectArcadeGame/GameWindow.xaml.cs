@@ -429,7 +429,7 @@ namespace ProjectArcadeGame
             //Platform
             if (LeftPos2 >= Platform_L - 25)
             {
-                BaseTop = 180;
+                BaseTop2 = 180;
             }
             if (LeftPos2 <= Platform_L - 75 && BaseTop2 == 180 && MoveUp2 == false)
             {
