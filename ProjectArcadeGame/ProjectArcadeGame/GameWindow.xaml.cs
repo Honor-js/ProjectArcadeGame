@@ -31,6 +31,7 @@ namespace ProjectArcadeGame
         private ImageBrush PipeSkin = new ImageBrush(); //Pipe
         private ImageBrush GoombaSkin = new ImageBrush(); // Goomba, 1st obstacle
         private ImageBrush FinishSkin = new ImageBrush(); //Peach
+        private ImageBrush LavaSkin = new ImageBrush(); //Lava
         //private ImageBrush PlayerSkinLeft = new ImageBrush();
 
         int Speed = 8;
@@ -145,6 +146,15 @@ namespace ProjectArcadeGame
             GoombaL1.Fill = GoombaSkin;
             GoombaL2.Fill = GoombaSkin;
             GoombaL3.Fill = GoombaSkin;
+
+            //Lava
+            LavaSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_Lava.png"));
+            LavaM.Fill = LavaSkin;
+            LavaL.Fill = LavaSkin;
+
+            // Platform
+            PlatformM.Fill = GroundSkin;
+            PlatformL.Fill = GroundSkin;
         }
         
         private void GameEngine(object sender, EventArgs press)
@@ -419,7 +429,7 @@ namespace ProjectArcadeGame
             //Platform
             if (LeftPos2 >= Platform_L - 25)
             {
-                BaseTop = 180;
+                BaseTop2 = 180;
             }
             if (LeftPos2 <= Platform_L - 75 && BaseTop2 == 180 && MoveUp2 == false)
             {
@@ -486,7 +496,7 @@ namespace ProjectArcadeGame
         
             {
                 string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
-                string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win/Lose], [Date]) VALUES ('" +
+                string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win_Lose], [Date]) VALUES ('" +
                 highscore + "','"+ name + "','"+ WL +"','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand();
