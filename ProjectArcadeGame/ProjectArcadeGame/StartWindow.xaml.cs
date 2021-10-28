@@ -19,8 +19,11 @@ namespace ProjectArcadeGame
     /// </summary>
     public partial class StartWindow : Window
     {
+        public static string PlayerName1;
+        public static string PlayerName2;
         public StartWindow()
         {
+            
             InitializeComponent();
         }
 
@@ -33,10 +36,10 @@ namespace ProjectArcadeGame
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
+            PlayerName1 = Name1.Text;
+            PlayerName2 = Name2.Text;
             GameWindow gameWindow = new GameWindow();
             gameWindow.Visibility = Visibility.Visible;
-            string Player_Name1 = Name1.Text;
-            string Player_Name2 = Name2.Text;
             this.Close();
         }
 

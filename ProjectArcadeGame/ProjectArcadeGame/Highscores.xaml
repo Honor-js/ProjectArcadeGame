@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectArcadeGame"
         mc:Ignorable="d"
-        Title="Highscores" Height="450" Width="800">
+        Title="Highscores" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Characters/startscreen.png"/>
@@ -15,13 +15,14 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+      
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Grid.Column="1" Content="Highscores" Foreground="DodgerBlue" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" FontFamily="Gill Sans Ultra Bold" FontSize="36"/>
-        <Button Grid.Column="2" Grid.Row="2"
-         Click="HighscoreBack_Click" Background="Black" Foreground="White" Height="50" FontFamily="Gill Sans Ultra Bold" FontSize="20">Back</Button>
+        <DataGrid Name="HighscoresTable" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="0.2,0,263.6,0" Grid.RowSpan="2"/>
+        <Button Grid.Column="2" Grid.Row="2" Click="HighscoreBack_Click" Background="Black" Foreground="White" Height="50" FontFamily="Gill Sans Ultra Bold" FontSize="20">Back</Button>
     </Grid>
 </Window>

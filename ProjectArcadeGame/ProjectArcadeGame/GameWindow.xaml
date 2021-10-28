@@ -36,45 +36,85 @@
             Tag="Platform"
             Fill="Green"
             Height="50"
-            Width="2000"
+            Width="1050"
             HorizontalAlignment="Stretch"
             Canvas.Top="365"
             Canvas.Left="0"/>
-        <Rectangle 
+            <Rectangle 
             x:Name="UnderGround"
             Tag="Platform"
             Fill="Tan"
             Height="50"
-            Width="2000"
+            Width="1050"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
+            <Rectangle
+            x:Name="LavaM"
+            Fill="DarkRed"
+            Height="100"
+            Width="1000"
+            Canvas.Left="1050"
+            Canvas.Top="365"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" />
             <Label x:Name="Time1" Content="" HorizontalAlignment="Left"/>
             <!--#endregion-->
             <!--#region Obstacle1-->
             <Rectangle
-            x:Name="Coin2"
+            x:Name="Coin_M1"
             Tag="Coin2"
             Fill="Yellow"
             Width="50"
             Height="50"
-            Canvas.Left="400"/>
-            <!--Goomba 1-->
+            Canvas.Left="355"
+            Canvas.Top="296"/>
+            <Rectangle
+            x:Name="Coin_M2"
+            Tag="Coin2"
+            Fill="Yellow"
+            Width="50"
+            Height="50"
+            Canvas.Left="935"
+            Canvas.Top="296"/>
+            <!--Goomba-->
             <Rectangle
              x:Name="GoombaM1"
              Fill="Brown"
              Width="50"
              Height="50"
-             Canvas.Left="200"
+             Canvas.Left="300"
              Canvas.Top="296"/>
+            <Rectangle
+             x:Name="GoombaM2"
+             Fill="Brown"
+             Width="50"
+             Height="50"
+             Canvas.Left="850"
+             Canvas.Top="296"/>
+            <Rectangle
+             x:Name="GoombaM3"
+             Fill="Brown"
+             Width="50"
+             Height="50"
+             Canvas.Left="1300"
+             Canvas.Top="175"/>
             <!--Pipe 1-->
             <Rectangle
              x:Name="PipeM1"
              Fill="LightGreen"
              Width="50"
              Height="75"
-             Canvas.Left="600"
+             Canvas.Left="1000"
              Canvas.Top="296"/>
+            <!--Platform-->
+            <Rectangle
+             x:Name="PlatformM"
+             Fill="Green"
+             Width="500"
+             Height="50"
+             Canvas.Left="1175"
+             Canvas.Top="250"/>
             <!--Peach1-->
             <Rectangle
             x:Name="Peach1"
@@ -83,7 +123,7 @@
             Height="75"
             Width="75"
             Canvas.Left="1400"
-            Canvas.Top="296"/>
+            Canvas.Top="175"/>
             <!--#endregion-->
         </Canvas>
         
@@ -102,7 +142,7 @@
             Tag="Platform"
             Fill="Green"
             Height="50"
-            Width="2000"
+            Width="1050"
             HorizontalAlignment="Stretch"
             Canvas.Top="371"
             Canvas.Left="0"/>
@@ -111,36 +151,75 @@
             Tag="Platform"
             Fill="Tan"
             Height="50"
-            Width="2000"
+            Width="1050"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch" 
             Canvas.Top="420"/>
+            <Rectangle
+            x:Name="LavaL"
+            Fill="DarkRed"
+            Height="100"
+            Width="1000"
+            Canvas.Left="1050"
+            Canvas.Top="365"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" />
             <Label x:Name="Time2" Content="" HorizontalAlignment="Left"/>
             <!--#endregion-->
             <!--#region Obstacle2-->
             <Rectangle
-            x:Name="Coin1"
+            x:Name="Coin_L1"
             Tag="Coin"
             Fill="Yellow"
             Width="50"
             Height="50"
             Canvas.Left="400"/>
+            <Rectangle
+            x:Name="Coin_L2"
+            Tag="Coin2"
+            Fill="Yellow"
+            Width="50"
+            Height="50"
+            Canvas.Left="935"
+            Canvas.Top="296"/>
             <!--Goomba 1-->
             <Rectangle
              x:Name="GoombaL1"
              Fill="Brown"
              Width="50"
              Height="50"
-             Canvas.Left="200"
+             Canvas.Left="300"
              Canvas.Top="296"/>
+            <Rectangle
+             x:Name="GoombaL2"
+             Fill="Brown"
+             Width="50"
+             Height="50"
+             Canvas.Left="850"
+             Canvas.Top="296"/>
+            <Rectangle
+             x:Name="GoombaL3"
+             Fill="Brown"
+             Width="50"
+             Height="50"
+             Canvas.Left="1300"
+             Canvas.Top="175"/>
             <!--Pipe 1-->
             <Rectangle
              x:Name="PipeL1"
              Fill="LightGreen"
              Width="50"
              Height="75"
-             Canvas.Left="600"
+             Canvas.Left="1000"
              Canvas.Top="296"/>
+            <!--Platform-->
+            <Rectangle
+             x:Name="PlatformL"
+             Fill="Green"
+             Width="500"
+             Height="50"
+             Canvas.Left="1100"
+             Canvas.Top="250"/>
             <!--Peach2-->
             <Rectangle
             x:Name="Peach2"
@@ -149,7 +228,7 @@
             Height="75"
             Width="75"
             Canvas.Left="1400"
-            Canvas.Top="296"/>
+            Canvas.Top="175"/>
             <!--#endregion-->
         </Canvas>
     </Grid>
