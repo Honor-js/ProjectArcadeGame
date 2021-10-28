@@ -47,6 +47,7 @@ namespace ProjectArcadeGame
         int Force2 = 10;
         int JumpSpeed2 = 10;
         int BaseTop2 = 296;
+
         private DispatcherTimer GameTimer = new DispatcherTimer();
         private DispatcherTimer TimerPlayer1 = new DispatcherTimer();
         private DispatcherTimer TimerPlayer2 = new DispatcherTimer();
