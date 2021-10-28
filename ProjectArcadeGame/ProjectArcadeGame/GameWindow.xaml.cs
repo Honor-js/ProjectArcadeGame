@@ -486,7 +486,7 @@ namespace ProjectArcadeGame
             {
                 string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
                 string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win/Lose], [Date]) VALUES ('" +
-                highscore + "','"+ name + "','"+WL+"','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
+                highscore + "','"+ name + "','"+ WL +"','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand();
                 try

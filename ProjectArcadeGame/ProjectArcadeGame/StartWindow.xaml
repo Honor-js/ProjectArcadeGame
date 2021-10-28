@@ -51,8 +51,8 @@
                  Grid.Column="1"
                  Background="Black" 
                  Foreground="White"
-                 x:Name="Name1">
-        </TextBox>
+                 x:Name="Name1"/>
+
         <TextBox MaxLength="10" 
                  Grid.Row="1" 
                  Grid.Column="3"
