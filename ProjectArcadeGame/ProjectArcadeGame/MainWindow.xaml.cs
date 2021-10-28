@@ -28,28 +28,28 @@ namespace ProjectArcadeGame
 
         }
 
-        private void Start_Click(object sender, RoutedEventArgs e)
+        private void Start_Click(object sender, RoutedEventArgs e) // Goes to Start Window
         {
             StartWindow startWindow = new StartWindow();
             startWindow.Visibility = Visibility.Visible;
             this.Close();
         }
 
-        private void How_Click(object sender, RoutedEventArgs e)
+        private void How_Click(object sender, RoutedEventArgs e) // Goes to How to Play
         {
             HowToPlay howToPlay = new HowToPlay();
             howToPlay.Visibility = Visibility.Visible;
             this.Close();
         }
 
-        private void Highscore_Click(object sender, RoutedEventArgs e)
+        private void Highscore_Click(object sender, RoutedEventArgs e) // Goes to Highscores
         {
             Highscores highscores = new Highscores();
             highscores.Visibility = Visibility.Visible;
             this.Close();
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e) //Closes the application
         {
             this.Close();
         }

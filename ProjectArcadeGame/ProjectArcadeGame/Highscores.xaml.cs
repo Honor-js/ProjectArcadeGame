@@ -26,10 +26,10 @@ namespace ProjectArcadeGame
             InitializeComponent();
         }
    
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e) //When window loads carrry out method
         {
             string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
-            string query = "SELECT TOP 10 [Highscore], [Player], [Win_Lose], [Date] FROM [Highscores] ORDER BY [Highscore] ASC";
+            string query = "SELECT TOP 10 [Highscore], [Player], [Win_Lose], [Date] FROM [Highscores] ORDER BY [Highscore] ASC"; //Select records to fill Datagrid
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand();
             
@@ -43,19 +43,19 @@ namespace ProjectArcadeGame
                 SqlDataAdapter sda = new SqlDataAdapter(command);
                 DataTable dt = new DataTable("Highscores");
                 sda.Fill(dt);
-                HighscoresTable.ItemsSource = dt.DefaultView;
+                HighscoresTable.ItemsSource = dt.DefaultView; //View of SQL Table Highscores
                 connection.Close();
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message); //Shows error message 
 
             }
              
         }
 
-        private void HighscoreBack_Click(object sender, RoutedEventArgs e)
+        private void HighscoreBack_Click(object sender, RoutedEventArgs e) //Return to Main Window
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Visibility = Visibility.Visible;
