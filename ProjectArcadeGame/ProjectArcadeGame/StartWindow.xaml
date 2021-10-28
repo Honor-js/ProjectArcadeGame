@@ -11,10 +11,10 @@
             <ImageBrush ImageSource="/Characters/startscreen.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="21*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,43 +23,87 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button  Grid.Row="3"
-                 Grid.Column="4" 
-                Click="Back_Click" 
-                Background="Black" 
-                Foreground="White" 
-                Height="50" 
-                FontFamily="Gill Sans Ultra Bold" 
-                FontSize="20">Back</Button>
-        <Button Grid.Row="2" 
-                Grid.Column="2"
-                Click="Start_Click" 
-                Background="#FFFFD477" 
-                Foreground="DodgerBlue" 
-                FontFamily="Gill Sans Ultra Bold" 
-                FontSize="20">Start</Button>
-        <TextBlock Grid.Row="0" 
-                   Grid.Column="1">
-            Speler 1
-        </TextBlock>
-        <TextBlock Grid.Row="0" 
-                   Grid.Column="3">
-            Speler 2
-        </TextBlock>
-        <TextBox MaxLength="10" 
-                 Grid.Row="1" 
-                 Grid.Column="1"
-                 Background="Black" 
-                 Foreground="White"
-                 x:Name="Name1"/>
+        <Button  
+            Grid.Row="3"
+            Grid.Column="4" 
+            Click="Back_Click" 
+            Background="Black" 
+            Foreground="White" 
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="20" 
+            FontWeight="Bold" 
+            FontStyle="Italic" 
+            Grid.ColumnSpan="2" 
+            Margin="0,25,0,25">
+            Back
+        </Button>
+        <Button 
+            Grid.Row="2" 
+            Grid.Column="2"
+            Click="Start_Click" 
+            Background="#FFFFD477" 
+            Foreground="DodgerBlue" 
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="20" 
+            FontWeight="Bold" 
+            FontStyle="Italic" 
+            Margin="0,25,0,25">
+            Start
+        </Button>
 
-        <TextBox MaxLength="10" 
-                 Grid.Row="1" 
-                 Grid.Column="3"
-                 Background="Black" 
-                 Foreground="White"
-                 x:Name="Name2">
-            
-        </TextBox>
+
+        <TextBlock 
+            Grid.Row="0" 
+            Width="100" 
+            Height="24"
+            Foreground="DodgerBlue"
+            FontSize="20" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            FontFamily="Gill Sans Ultra Bold" 
+            Grid.Column="1" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom">
+            Player 1
+        </TextBlock>
+        <TextBlock 
+            Grid.Row="0" 
+            Width="100" 
+            Height="24"
+            Foreground="DodgerBlue"
+            FontSize="20" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            FontFamily="Gill Sans Ultra Bold" 
+            Grid.Column="3" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom">
+            Player 2
+        </TextBlock>
+        <TextBox 
+            MaxLength="10" 
+            Grid.Row="1" 
+            Grid.Column="1"
+            Background="Black" 
+            Foreground="DodgerBlue"
+            Margin="0,5,0,5"
+            x:Name="Name1" 
+            FontSize="16"
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            FontFamily="Gill Sans Ultra Bold" />
+
+        <TextBox 
+            MaxLength="10" 
+            Grid.Row="1" 
+            Grid.Column="3"
+            Background="Black" 
+            Foreground="DodgerBlue"
+            Margin="0,5,0,5"
+            x:Name="Name2" 
+            FontSize="16"
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            FontFamily="Gill Sans Ultra Bold" />
     </Grid>
 </Window>
