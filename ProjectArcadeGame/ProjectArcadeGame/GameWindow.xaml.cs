@@ -436,12 +436,12 @@ namespace ProjectArcadeGame
         #region timers
         int count1 = 0;
         int count2 = 0;
-        private void Timer1 (object sender, EventArgs e)
+        private void Timer1 (object sender, EventArgs e) //Time increase timer 1
         {
             count1++;
             Time1.Content = string.Format("{0}:{1}", count1 / 60, count1 % 60);
         }
-        private void Timer2(object sender, EventArgs e)
+        private void Timer2(object sender, EventArgs e) //Time increase timer 2
         {
             count2++;
             Time2.Content = string.Format("{0}:{1}", count2 / 60, count2 % 60);
@@ -480,8 +480,9 @@ namespace ProjectArcadeGame
         }
         #endregion
 
-        #region Database
-        private void AddHighscoreToDatabase(int highscore, string name, string WL) //Database = Microsoft SQL Express
+        #region Database 
+        //Database = Microsoft SQL Express 
+        private void AddHighscoreToDatabase(int highscore, string name, string WL) //Saves name, score, Win_Lose & Date to database
         
             {
                 string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
@@ -501,7 +502,7 @@ namespace ProjectArcadeGame
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message); //Shows error message
                 
                 }
             }

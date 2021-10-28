@@ -17,7 +17,7 @@ namespace ProjectArcadeGame
     /// <summary>
     /// Interaction logic for StartWindow.xaml
     /// </summary>
-    public partial class StartWindow : Window
+    public partial class StartWindow : Window //Variable is accessable in both Start and Game Window
     {
         public static string PlayerName1;
         public static string PlayerName2;
@@ -27,14 +27,14 @@ namespace ProjectArcadeGame
             InitializeComponent();
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e) //Return to Main Window
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Visibility = Visibility.Visible;
             this.Close();
         }
 
-        private void Start_Click(object sender, RoutedEventArgs e)
+        private void Start_Click(object sender, RoutedEventArgs e) //Goes to Start Window
         {
             PlayerName1 = Name1.Text;
             PlayerName2 = Name2.Text;
