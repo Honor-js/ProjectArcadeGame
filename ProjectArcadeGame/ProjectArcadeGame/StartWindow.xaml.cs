@@ -36,11 +36,18 @@ namespace ProjectArcadeGame
 
         private void Start_Click(object sender, RoutedEventArgs e) //Goes to Start Window
         {
-            PlayerName1 = Name1.Text;
-            PlayerName2 = Name2.Text;
-            GameWindow gameWindow = new GameWindow();
-            gameWindow.Visibility = Visibility.Visible;
-            this.Close();
+            if (String.IsNullOrEmpty(Name1.Text) || String.IsNullOrEmpty(Name2.Text))
+            {
+                MessageBox.Show("Please enter your names before proceeding", "Names can't be empty", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                PlayerName1 = Name1.Text;
+                PlayerName2 = Name2.Text;
+                GameWindow gameWindow = new GameWindow();
+                gameWindow.Visibility = Visibility.Visible;
+                this.Close();
+            }
         }
 
     }

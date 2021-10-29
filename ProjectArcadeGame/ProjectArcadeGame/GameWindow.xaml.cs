@@ -289,16 +289,25 @@ namespace ProjectArcadeGame
                     WL2 = "Lose";
                     AddHighscoreToDatabase(count1, Name1,WL1);
                     AddHighscoreToDatabase(count2, Name2,WL2);
-                    MessageBox.Show("Player 1 wins!");
+                    MessageBox.Show(Name1 + " wins!");
                     Close();
                 }
-                else
+                else if (count1 > count2)
                 {
                     WL1 = "Lose";
                     WL2 = "Win";
                     AddHighscoreToDatabase(count1, Name1,WL1);
                     AddHighscoreToDatabase(count2, Name2,WL2);
-                    MessageBox.Show("Player 2 wins!");
+                    MessageBox.Show(Name2 + " wins!");
+                    Close();
+                }
+                else if (count1 == count2)
+                {
+                    WL1 = "Tie";
+                    WL2 = "Tie";
+                    AddHighscoreToDatabase(count1, Name1, WL1);
+                    AddHighscoreToDatabase(count2, Name2, WL2);
+                    MessageBox.Show("It's a tie!");
                     Close();
                 }
                 #endregion
