@@ -476,26 +476,9 @@ namespace ProjectArcadeGame
         }
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
-            //Player1
-            Canvas.SetLeft(Player, 10);
-            Canvas.SetTop(Player, 296);
-            JumpSpeed = 11;
-            Force = 11;
-            BaseTop = 296;
-            MoveUp = false;
-            //P1Finish = false;
-            CoinM1 = false;
-            count1 = 0;
-            //Player2
-            Canvas.SetLeft(Player2, 10);
-            Canvas.SetTop(Player2, 296);
-            JumpSpeed2 = 11;
-            Force2 = 11;
-            BaseTop2 = 296;
-            MoveUp2 = false;
-            //P2Finish = false;
-            CoinL1 = false;
-            count2 = 0;
+            GameWindow gameWindow = new GameWindow();
+            gameWindow.Visibility = Visibility.Visible;
+            this.Close();
         }
         #endregion
 
