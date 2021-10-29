@@ -260,8 +260,8 @@ namespace ProjectArcadeGame
                     Force2 += 1;
                     if (Force2 > 11 || CurrentTop2 >= BaseTop2)
                     {
-                        JumpSpeed2 = 10;
-                        Force2 = 10;
+                        JumpSpeed2 = 11;
+                        Force2 = 11;
                         MoveUp2 = false;
                     }
                 }
@@ -404,7 +404,7 @@ namespace ProjectArcadeGame
             if (LeftPos2 >= PipeL_1 - 67 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
             {
                 BaseTop2 = 221;
-                if (MoveUp2 == false && CurrentTop2 != BaseTop)
+                if (MoveUp2 == false && CurrentTop2 != BaseTop2)
                 {
                     Canvas.SetTop(Player2, 221);
                 }
