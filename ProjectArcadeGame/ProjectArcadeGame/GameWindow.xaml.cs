@@ -289,18 +289,8 @@ namespace ProjectArcadeGame
                     WL2 = "Lose";
                     AddHighscoreToDatabase(count1, Name1,WL1);
                     AddHighscoreToDatabase(count2, Name2,WL2);
-                    var result = MessageBox.Show("Player 1 wins with a time of " + count1 + " seconds! Would you like to restart?", "Game Over!", MessageBoxButton.YesNo);
-
-                    if (result == MessageBoxResult.Yes)
-                    {
-                        System.Windows.Application.Current.Shutdown();
-                        GameWindow gameWindow = new GameWindow();
-                        gameWindow.Visibility = Visibility.Visible;
-                    }
-                    else if (result == MessageBoxResult.No)
-                    {
-                        Close();
-                    }
+                    MessageBox.Show("Player 1 wins!");
+                    Close();
                 }
                 else
                 {
@@ -308,24 +298,11 @@ namespace ProjectArcadeGame
                     WL2 = "Win";
                     AddHighscoreToDatabase(count1, Name1,WL1);
                     AddHighscoreToDatabase(count2, Name2,WL2);
-                   var result = MessageBox.Show("Player 2 wins with a time of " + count2 + " seconds! Would you like to restart?", "Game Over!", MessageBoxButton.YesNo);
-
-                    if (result == MessageBoxResult.Yes)
-                    {
-                        System.Windows.Application.Current.Shutdown();
-                        GameWindow gameWindow = new GameWindow();
-                        gameWindow.Visibility = Visibility.Visible;
-                    }
-                    else if (result == MessageBoxResult.No)
-                    {
-                        Close();
-                    }
-                   
+                    MessageBox.Show("Player 2 wins!");
+                    Close();
                 }
-
                 #endregion
             }
-
             #endregion
 
 
