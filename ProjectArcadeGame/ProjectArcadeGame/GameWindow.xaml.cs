@@ -80,15 +80,11 @@ namespace ProjectArcadeGame
                 MoveLeft = false;
             if (press.Key == Key.Right)
                 MoveRight = false;
-            //if (press.Key == Key.Up)
-                //MoveUp = false;
             //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = false;
             if (press.Key == Key.D)
                 MoveRight2 = false;
-            //if (press.Key == Key.W)
-                //MoveUp2 = false;
         }
         #endregion
 
@@ -206,7 +202,7 @@ namespace ProjectArcadeGame
             }
 
             //Jump
-            if (MoveUp == true && JumpSpeed > 0/* && Force == 10*/)
+            if (MoveUp == true && JumpSpeed > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
                 JumpSpeed -= 1;
@@ -215,9 +211,7 @@ namespace ProjectArcadeGame
 
             if (MoveUp == true && JumpSpeed == 0 && Force <= 11)
             {
-                //Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
-                //JumpSpeed += 1;
                 Force += 1;
                 if (Force > 11 || CurrentTop >= BaseTop)
                 {
@@ -253,7 +247,7 @@ namespace ProjectArcadeGame
                 }
 
                 //Jump
-                if (MoveUp2 == true && JumpSpeed2 > 0/* && Force == 10*/)
+                if (MoveUp2 == true && JumpSpeed2 > 0)
                 {
                     Canvas.SetTop(Player2, Canvas.GetTop(Player2) - JumpSpeed2);
                     JumpSpeed2 -= 1;
@@ -262,9 +256,7 @@ namespace ProjectArcadeGame
 
                 if (MoveUp2 == true && JumpSpeed2 == 0 && Force2 <= 11)
                 {
-                    //Jumping = true;
                     Canvas.SetTop(Player2, Canvas.GetTop(Player2) + Force2);
-                    //JumpSpeed += 1;
                     Force2 += 1;
                     if (Force2 > 11 || CurrentTop2 >= BaseTop2)
                     {
@@ -342,7 +334,7 @@ namespace ProjectArcadeGame
                 CoinM2 = true;
             }
             //Pipe
-            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
+            if (LeftPos >= PipeM_1 - 67 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
             {
                 BaseTop = 221;
                 if (MoveUp == false && CurrentTop != BaseTop)
@@ -355,7 +347,7 @@ namespace ProjectArcadeGame
                 BaseTop = 296;
                 Canvas.SetTop(Player, 296);
             }
-            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 - 67  && CurrentTop >= 250 /*Collision left*/)
+            if (LeftPos >= PipeM_1 - 75 && LeftPos < PipeM_1 - 67  && CurrentTop >= 250 /*Collision left*/)
             {
                 Canvas.SetLeft(Player, PipeM_1 - 80);
             }
@@ -409,7 +401,7 @@ namespace ProjectArcadeGame
                 CoinL2 = true;
             }
             //Pipe
-            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
+            if (LeftPos2 >= PipeL_1 - 67 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
             {
                 BaseTop2 = 221;
                 if (MoveUp2 == false && CurrentTop2 != BaseTop)
@@ -422,7 +414,7 @@ namespace ProjectArcadeGame
                 BaseTop2 = 296;
                 Canvas.SetTop(Player2, 296);
             }
-            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 <= PipeL_1 - 67 && CurrentTop2 >= 250 /*Collision left*/)
+            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 < PipeL_1 - 67 && CurrentTop2 >= 250 /*Collision left*/)
             {
                 Canvas.SetLeft(Player2, PipeL_1 - 80);
             }
