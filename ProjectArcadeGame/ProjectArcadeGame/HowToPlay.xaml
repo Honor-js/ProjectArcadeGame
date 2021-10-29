@@ -14,7 +14,6 @@
             <RowDefinition Height="9*"/>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="9*"/>
-
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -23,6 +22,7 @@
             <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
+        
         <!--Back button-->
         <Button 
             Grid.Column="4" 
@@ -35,10 +35,10 @@
             Width="140"
             Height="40"
             HorizontalAlignment="Right"
-            VerticalAlignment="Bottom"
-           >
+            VerticalAlignment="Bottom">
             Back
         </Button>
+        
         <!--Mario img-->
         <Image
             Source="/Characters/mario.png"
@@ -46,9 +46,8 @@
             Grid.Row="0"
             Height="120"
             VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            />
-        <!--Player 1-->
+            HorizontalAlignment="Center"/>
+        
         <!--HowToPlayer 1-->
         <Label
             Grid.Column="2"
@@ -62,9 +61,7 @@
             BorderBrush="Black"
             BorderThickness="2"
             VerticalAlignment="Center"
-            HorizontalAlignment="Left"
-            
-            >
+            HorizontalAlignment="Left">
             <TextBlock>
                 Player1<LineBreak/>
                 <LineBreak/>
@@ -83,8 +80,7 @@
             Grid.Row="0"
             Height="120"
             VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            />
+            HorizontalAlignment="Center"/>
 
         <!--HowToPlayer 2-->
         <Label
@@ -99,9 +95,7 @@
             BorderBrush="Black"
             BorderThickness="2"
             VerticalAlignment="Center"
-            HorizontalAlignment="Left"
-            
-            >
+            HorizontalAlignment="Left">
             <TextBlock>
                 "Player 2<LineBreak/>
                 <LineBreak/>
@@ -112,6 +106,7 @@
                 Move Left = A Key
             </TextBlock>
         </Label>
+        
         <!--Coin-->
         <Image
             Source="/Characters/coin.png"
@@ -119,8 +114,8 @@
             Grid.Row="1"
             Height="120"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-         />
+            VerticalAlignment="Center"/>
+        
         <!--Coin description-->
         <Label
             Grid.Column="2"
@@ -134,9 +129,7 @@
             BorderBrush="Black"
             BorderThickness="2"
             VerticalAlignment="Center"
-            HorizontalAlignment="Left"
-            
-            >
+            HorizontalAlignment="Left">
             <TextBlock>
                 A Coin <LineBreak/>
                 <LineBreak/>
@@ -145,6 +138,7 @@
                 save valuable time!
             </TextBlock>
         </Label>
+        
         <!--Goomba-->
         <Image
             Source="/Characters/goomba.png"
@@ -152,8 +146,8 @@
             Grid.Row="1"
             Height="120"
             VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-         />
+            HorizontalAlignment="Center"/>
+        
         <!--Goomba description-->
         <Label
             Grid.Column="4"
@@ -167,9 +161,7 @@
             BorderBrush="Black"
             BorderThickness="2"
             VerticalAlignment="Center"
-            HorizontalAlignment="Left"
-            
-            >
+            HorizontalAlignment="Left">
             <TextBlock>
                 A Goomba <LineBreak/>
                 <LineBreak/>
@@ -177,6 +169,7 @@
                 vicious goombas!
             </TextBlock>
         </Label>
+        
         <!--Peach-->
         <Image
             Source="/Characters/peach.png"
@@ -184,8 +177,8 @@
             Grid.Row="2"
             Height="120"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-         />
+            VerticalAlignment="Center"/>
+       
         <!--Peach description-->
         <Label
             Grid.Column="2"
@@ -199,14 +192,11 @@
             BorderBrush="Black"
             BorderThickness="2"
             VerticalAlignment="Center"
-            HorizontalAlignment="Left"
-            
-            >
+            HorizontalAlignment="Left">
             <TextBlock>
                 Your Objective is simple<LineBreak/>
                 Save the princess!
             </TextBlock>
         </Label>
-
     </Grid>
 </Window>
