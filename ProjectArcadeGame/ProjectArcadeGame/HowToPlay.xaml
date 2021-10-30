@@ -11,16 +11,192 @@
             <ImageBrush ImageSource="/Characters/startscreen.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="2" Grid.Row="2"
-         Click="HowToPlayBack_Click" Background="Black" Foreground="White" Height="50" FontFamily="Gill Sans Ultra Bold" FontSize="20">Back</Button>
+        
+        <!--Back button-->
+        <Button 
+            Grid.Column="4" 
+            Grid.Row="2"
+            Click="HowToPlayBack_Click" 
+            Background="Black" 
+            Foreground="White" 
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="20" 
+            Width="140"
+            Height="40"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom">
+            Back
+        </Button>
+        
+        <!--Mario img-->
+        <Image
+            Source="/Characters/mario.png"
+            Grid.Column="1"
+            Grid.Row="0"
+            Height="120"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+        
+        <!--HowToPlayer 1-->
+        <Label
+            Grid.Column="2"
+            Grid.Row="0"
+            Foreground="DodgerBlue"
+            Background="#FFFFD477"
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="12" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            BorderBrush="Black"
+            BorderThickness="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left">
+            <TextBlock>
+                Player1<LineBreak/>
+                <LineBreak/>
+                Jump = KeyUp<LineBreak/>
+                <LineBreak/>
+                Move Right = KeyRight<LineBreak/>
+                <LineBreak/>
+                Move Left = KeyLeft
+            </TextBlock>
+        </Label>
+
+        <!--Luigi-->
+        <Image
+            Source="/Characters/luigi.png"
+            Grid.Column="3"
+            Grid.Row="0"
+            Height="120"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+        <!--HowToPlayer 2-->
+        <Label
+            Grid.Column="4"
+            Grid.Row="0"
+            Foreground="DodgerBlue"
+            Background="#FFFFD477"
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="12" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            BorderBrush="Black"
+            BorderThickness="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left">
+            <TextBlock>
+                "Player 2<LineBreak/>
+                <LineBreak/>
+                Jump = W Key<LineBreak/>
+                <LineBreak/>
+                Move Right = D Key<LineBreak/>
+                <LineBreak/>
+                Move Left = A Key
+            </TextBlock>
+        </Label>
+        
+        <!--Coin-->
+        <Image
+            Source="/Characters/coin.png"
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="120"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+        
+        <!--Coin description-->
+        <Label
+            Grid.Column="2"
+            Grid.Row="1"
+            Foreground="DodgerBlue"
+            Background="#FFFFD477"
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="12" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            BorderBrush="Black"
+            BorderThickness="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left">
+            <TextBlock>
+                A Coin <LineBreak/>
+                <LineBreak/>
+                Collect these to<LineBreak/>
+                complete the level and<LineBreak/>
+                save valuable time!
+            </TextBlock>
+        </Label>
+        
+        <!--Goomba-->
+        <Image
+            Source="/Characters/goomba.png"
+            Grid.Column="3"
+            Grid.Row="1"
+            Height="120"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+        
+        <!--Goomba description-->
+        <Label
+            Grid.Column="4"
+            Grid.Row="1"
+            Foreground="DodgerBlue"
+            Background="#FFFFD477"
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="12" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            BorderBrush="Black"
+            BorderThickness="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left">
+            <TextBlock>
+                A Goomba <LineBreak/>
+                <LineBreak/>
+                Watch out for the<LineBreak/>
+                vicious goombas!
+            </TextBlock>
+        </Label>
+        
+        <!--Peach-->
+        <Image
+            Source="/Characters/peach.png"
+            Grid.Column="1"
+            Grid.Row="2"
+            Height="120"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+       
+        <!--Peach description-->
+        <Label
+            Grid.Column="2"
+            Grid.Row="2"
+            Foreground="DodgerBlue"
+            Background="#FFFFD477"
+            FontFamily="Gill Sans Ultra Bold" 
+            FontSize="12" 
+            FontWeight="Bold" 
+            FontStyle="Italic"
+            BorderBrush="Black"
+            BorderThickness="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left">
+            <TextBlock>
+                Your Objective is simple<LineBreak/>
+                Save the princess!
+            </TextBlock>
+        </Label>
     </Grid>
 </Window>

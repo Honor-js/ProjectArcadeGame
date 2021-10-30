@@ -23,6 +23,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        
+        <!--Back button-->
         <Button  
             Grid.Row="3"
             Grid.Column="4" 
@@ -37,6 +39,8 @@
             Margin="0,25,0,25">
             Back
         </Button>
+        
+        <!--Start button-->
         <Button 
             Grid.Row="2" 
             Grid.Column="2"
@@ -51,7 +55,7 @@
             Start
         </Button>
 
-
+        <!--Player1 Text-->
         <TextBlock 
             Grid.Row="0" 
             Width="100" 
@@ -66,6 +70,8 @@
             VerticalAlignment="Bottom">
             Player 1
         </TextBlock>
+        
+        <!--Player 2 Text-->
         <TextBlock 
             Grid.Row="0" 
             Width="100" 
@@ -80,30 +86,33 @@
             VerticalAlignment="Bottom">
             Player 2
         </TextBlock>
+        
+        <!--Player 1 input-->
         <TextBox 
             MaxLength="10" 
             Grid.Row="1" 
             Grid.Column="1"
             Background="Black" 
             Foreground="DodgerBlue"
-            Margin="0,5,0,5"
+            Margin="0,7,0,7"
             x:Name="Name1" 
             FontSize="16"
             FontWeight="Bold" 
             FontStyle="Italic"
-            FontFamily="Gill Sans Ultra Bold" />
-
+            FontFamily="Gill Sans Ultra Bold"/>
+        
+        <!--Player 2 input-->
         <TextBox 
             MaxLength="10" 
             Grid.Row="1" 
             Grid.Column="3"
             Background="Black" 
             Foreground="DodgerBlue"
-            Margin="0,5,0,5"
+            Margin="0,7,0,7"
             x:Name="Name2" 
             FontSize="16"
             FontWeight="Bold" 
             FontStyle="Italic"
-            FontFamily="Gill Sans Ultra Bold" />
+            FontFamily="Gill Sans Ultra Bold"/>
     </Grid>
 </Window>

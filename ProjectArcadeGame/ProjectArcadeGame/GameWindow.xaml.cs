@@ -31,6 +31,7 @@ namespace ProjectArcadeGame
         private ImageBrush PipeSkin = new ImageBrush(); //Pipe
         private ImageBrush GoombaSkin = new ImageBrush(); // Goomba, 1st obstacle
         private ImageBrush FinishSkin = new ImageBrush(); //Peach
+        private ImageBrush LavaSkin = new ImageBrush(); //Lava
         //private ImageBrush PlayerSkinLeft = new ImageBrush();
 
         int Speed = 8;
@@ -79,15 +80,11 @@ namespace ProjectArcadeGame
                 MoveLeft = false;
             if (press.Key == Key.Right)
                 MoveRight = false;
-            //if (press.Key == Key.Up)
-                //MoveUp = false;
             //Player2
             if (press.Key == Key.A)
                 MoveLeft2 = false;
             if (press.Key == Key.D)
                 MoveRight2 = false;
-            //if (press.Key == Key.W)
-                //MoveUp2 = false;
         }
         #endregion
 
@@ -145,6 +142,15 @@ namespace ProjectArcadeGame
             GoombaL1.Fill = GoombaSkin;
             GoombaL2.Fill = GoombaSkin;
             GoombaL3.Fill = GoombaSkin;
+
+            //Lava
+            LavaSkin.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Characters/Mario_Lava.png"));
+            LavaM.Fill = LavaSkin;
+            LavaL.Fill = LavaSkin;
+
+            // Platform
+            PlatformM.Fill = GroundSkin;
+            PlatformL.Fill = GroundSkin;
         }
         
         private void GameEngine(object sender, EventArgs press)
@@ -196,7 +202,7 @@ namespace ProjectArcadeGame
             }
 
             //Jump
-            if (MoveUp == true && JumpSpeed > 0/* && Force == 10*/)
+            if (MoveUp == true && JumpSpeed > 0)
             {
                 Canvas.SetTop(Player, Canvas.GetTop(Player) - JumpSpeed);
                 JumpSpeed -= 1;
@@ -205,9 +211,7 @@ namespace ProjectArcadeGame
 
             if (MoveUp == true && JumpSpeed == 0 && Force <= 11)
             {
-                //Jumping = true;
                 Canvas.SetTop(Player, Canvas.GetTop(Player) + Force);
-                //JumpSpeed += 1;
                 Force += 1;
                 if (Force > 11 || CurrentTop >= BaseTop)
                 {
@@ -243,7 +247,7 @@ namespace ProjectArcadeGame
                 }
 
                 //Jump
-                if (MoveUp2 == true && JumpSpeed2 > 0/* && Force == 10*/)
+                if (MoveUp2 == true && JumpSpeed2 > 0)
                 {
                     Canvas.SetTop(Player2, Canvas.GetTop(Player2) - JumpSpeed2);
                     JumpSpeed2 -= 1;
@@ -252,14 +256,12 @@ namespace ProjectArcadeGame
 
                 if (MoveUp2 == true && JumpSpeed2 == 0 && Force2 <= 11)
                 {
-                    //Jumping = true;
                     Canvas.SetTop(Player2, Canvas.GetTop(Player2) + Force2);
-                    //JumpSpeed += 1;
                     Force2 += 1;
                     if (Force2 > 11 || CurrentTop2 >= BaseTop2)
                     {
-                        JumpSpeed2 = 10;
-                        Force2 = 10;
+                        JumpSpeed2 = 11;
+                        Force2 = 11;
                         MoveUp2 = false;
                     }
                 }
@@ -279,16 +281,25 @@ namespace ProjectArcadeGame
                     WL2 = "Lose";
                     AddHighscoreToDatabase(count1, Name1,WL1);
                     AddHighscoreToDatabase(count2, Name2,WL2);
-                    MessageBox.Show("Player 1 wins!");
+                    MessageBox.Show(Name1 + " wins!");
                     Close();
                 }
-                else
+                else if (count1 > count2)
                 {
                     WL1 = "Lose";
                     WL2 = "Win";
                     AddHighscoreToDatabase(count1, Name1,WL1);
                     AddHighscoreToDatabase(count2, Name2,WL2);
-                    MessageBox.Show("Player 2 wins!");
+                    MessageBox.Show(Name2 + " wins!");
+                    Close();
+                }
+                else if (count1 == count2)
+                {
+                    WL1 = "Tie";
+                    WL2 = "Tie";
+                    AddHighscoreToDatabase(count1, Name1, WL1);
+                    AddHighscoreToDatabase(count2, Name2, WL2);
+                    MessageBox.Show("It's a tie!");
                     Close();
                 }
                 #endregion
@@ -323,7 +334,7 @@ namespace ProjectArcadeGame
                 CoinM2 = true;
             }
             //Pipe
-            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
+            if (LeftPos >= PipeM_1 - 67 && LeftPos <= PipeM_1 + 50 /*Pipe 1*/)
             {
                 BaseTop = 221;
                 if (MoveUp == false && CurrentTop != BaseTop)
@@ -336,7 +347,7 @@ namespace ProjectArcadeGame
                 BaseTop = 296;
                 Canvas.SetTop(Player, 296);
             }
-            if (LeftPos >= PipeM_1 - 75 && LeftPos <= PipeM_1 - 67  && CurrentTop >= 250 /*Collision left*/)
+            if (LeftPos >= PipeM_1 - 75 && LeftPos < PipeM_1 - 67  && CurrentTop >= 250 /*Collision left*/)
             {
                 Canvas.SetLeft(Player, PipeM_1 - 80);
             }
@@ -390,10 +401,10 @@ namespace ProjectArcadeGame
                 CoinL2 = true;
             }
             //Pipe
-            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
+            if (LeftPos2 >= PipeL_1 - 67 && LeftPos2 <= PipeL_1 + 50 /*Pipe 1*/)
             {
                 BaseTop2 = 221;
-                if (MoveUp2 == false && CurrentTop2 != BaseTop)
+                if (MoveUp2 == false && CurrentTop2 != BaseTop2)
                 {
                     Canvas.SetTop(Player2, 221);
                 }
@@ -403,7 +414,7 @@ namespace ProjectArcadeGame
                 BaseTop2 = 296;
                 Canvas.SetTop(Player2, 296);
             }
-            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 <= PipeL_1 - 67 && CurrentTop2 >= 250 /*Collision left*/)
+            if (LeftPos2 >= PipeL_1 - 75 && LeftPos2 < PipeL_1 - 67 && CurrentTop2 >= 250 /*Collision left*/)
             {
                 Canvas.SetLeft(Player2, PipeL_1 - 80);
             }
@@ -419,7 +430,7 @@ namespace ProjectArcadeGame
             //Platform
             if (LeftPos2 >= Platform_L - 25)
             {
-                BaseTop = 180;
+                BaseTop2 = 180;
             }
             if (LeftPos2 <= Platform_L - 75 && BaseTop2 == 180 && MoveUp2 == false)
             {
@@ -457,26 +468,9 @@ namespace ProjectArcadeGame
         }
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
-            //Player1
-            Canvas.SetLeft(Player, 10);
-            Canvas.SetTop(Player, 296);
-            JumpSpeed = 11;
-            Force = 11;
-            BaseTop = 296;
-            MoveUp = false;
-            //P1Finish = false;
-            CoinM1 = false;
-            count1 = 0;
-            //Player2
-            Canvas.SetLeft(Player2, 10);
-            Canvas.SetTop(Player2, 296);
-            JumpSpeed2 = 11;
-            Force2 = 11;
-            BaseTop2 = 296;
-            MoveUp2 = false;
-            //P2Finish = false;
-            CoinL1 = false;
-            count2 = 0;
+            GameWindow gameWindow = new GameWindow();
+            gameWindow.Visibility = Visibility.Visible;
+            this.Close();
         }
         #endregion
 
@@ -486,7 +480,7 @@ namespace ProjectArcadeGame
         
             {
                 string connectionString = "Data Source=DESKTOP-BFOALAV\\SQLEXPRESS;Initial Catalog=GameDatabase;Integrated Security=True";
-                string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win/Lose], [Date]) VALUES ('" +
+                string query = "INSERT INTO [Highscores] ([Highscore],[Player],[Win_Lose], [Date]) VALUES ('" +
                 highscore + "','"+ name + "','"+ WL +"','" + DateTime.Today.ToString("yyyy-MM-dd") + "')";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand();

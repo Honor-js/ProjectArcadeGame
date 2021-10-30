@@ -55,6 +55,11 @@ namespace ProjectArcadeGame
              
         }
 
+        private void OnAutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e) //Format date to dd-MM-yyyy
+        {
+            if (e.PropertyType == typeof(System.DateTime))
+                (e.Column as DataGridTextColumn).Binding.StringFormat = "dd/MM/yyyy";
+        }
         private void HighscoreBack_Click(object sender, RoutedEventArgs e) //Return to Main Window
         {
             MainWindow mainWindow = new MainWindow();
